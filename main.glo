@@ -1,28 +1,28 @@
-\glossaryentry{Anamnese?\glossentry{anamnese}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Armazenamento chave-valor?\glossentry{armazenamento-chave-valor}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Atomicidade?\glossentry{atomicidade}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Autenticação?\glossentry{autenticacao}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Back-end?\glossentry{back-end}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Banco de dados relacional?\glossentry{banco-relacional}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Chave estrangeira?\glossentry{chave-estrangeira}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Chave primária?\glossentry{chave-primaria}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Cliente-servidor?\glossentry{cliente-servidor}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Conflito de sincronização?\glossentry{conflito-sincronizacao}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Endpoint?\glossentry{endpoint}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Exclusão lógica?\glossentry{exclusao-logica}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Fila de sincronização?\glossentry{fila-sincronizacao}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Front-end?\glossentry{front-end}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Hash?\glossentry{hash}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Interoperabilidade?\glossentry{interoperabilidade}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Last-Write-Wins?\glossentry{last-write-wins}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Metadados?\glossentry{metadados}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Offline-first?\glossentry{offline-first}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Persistência local?\glossentry{persistencia-local}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Prontuário clínico veterinário?\glossentry{prontuario-clinico-veterinario}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Serialização?\glossentry{serializacao}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Sincronização assíncrona?\glossentry{sincronizacao-assincrona}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Sincronização incremental?\glossentry{sincronizacao-incremental}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Timestamp?\glossentry{timestamp}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Token de autenticação?\glossentry{token-autenticacao}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Transação?\glossentry{transacao}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{Tutor?\glossentry{tutor}|setentrycounter[]{page}"\glsnumberformat}{42}
+\glossaryentry{Anamnese?\glossentry{anamnese}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Armazenamento chave-valor?\glossentry{armazenamento-chave-valor}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Atomicidade?\glossentry{atomicidade}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Autenticação?\glossentry{autenticacao}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Back-end?\glossentry{back-end}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Banco de dados relacional?\glossentry{banco-relacional}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Chave estrangeira?\glossentry{chave-estrangeira}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Chave primária?\glossentry{chave-primaria}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Cliente-servidor?\glossentry{cliente-servidor}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Conflito de sincronização?\glossentry{conflito-sincronizacao}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Endpoint?\glossentry{endpoint}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Exclusão lógica?\glossentry{exclusao-logica}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Fila de sincronização?\glossentry{fila-sincronizacao}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Front-end?\glossentry{front-end}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Hash?\glossentry{hash}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Interoperabilidade?\glossentry{interoperabilidade}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Last-Write-Wins?\glossentry{last-write-wins}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Metadados?\glossentry{metadados}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Offline-first?\glossentry{offline-first}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Persistência local?\glossentry{persistencia-local}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Prontuário clínico veterinário?\glossentry{prontuario-clinico-veterinario}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Serialização?\glossentry{serializacao}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Sincronização assíncrona?\glossentry{sincronizacao-assincrona}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Sincronização incremental?\glossentry{sincronizacao-incremental}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Timestamp?\glossentry{timestamp}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Token de autenticação?\glossentry{token-autenticacao}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Transação?\glossentry{transacao}|setentrycounter[]{page}"\glsnumberformat}{44}
+\glossaryentry{Tutor?\glossentry{tutor}|setentrycounter[]{page}"\glsnumberformat}{44}
