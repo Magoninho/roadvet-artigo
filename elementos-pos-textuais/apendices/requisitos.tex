@@ -1,0 +1,68 @@
+\chapter{Especificação de Requisitos do Sistema}
+\label{ap:requisitos}
+
+Este apêndice apresenta de forma detalhada os Requisitos Funcionais (RF) e Não Funcionais (RNF) que regem o escopo e o comportamento do sistema desenvolvido.
+
+\section{Requisitos Funcionais (RF)}
+\label{sec:ap_rf}
+
+\begin{description}[leftmargin=1.8cm, labelwidth=1.5cm, itemsep=0.5em]
+    \item[RF01] \textbf{Cadastrar veterinários:} A aplicação deve permitir o cadastro de veterinários mediante identificador, nome, e-mail e senha, com CRMV e telefone opcionais.
+    \item[RF02] \textbf{Validar o cadastro de veterinários:} O sistema deve impedir o cadastro com identificador ou e-mail já existente e exigir senha com, no mínimo, seis caracteres.
+    \item[RF03] \textbf{Autenticar veterinários:} A API deve permitir a autenticação por e-mail e senha, rejeitando credenciais inválidas, contas desativadas e contas marcadas como excluídas no momento do login.
+    \item[RF04] \textbf{Emitir tokens de autenticação:} Após o cadastro ou login bem-sucedido, a API deve retornar um token de acesso, um token de renovação e os dados do veterinário.
+    \item[RF05] \textbf{Renovar o acesso:} A API deve permitir a obtenção de um novo token de acesso mediante apresentação de um token de renovação válido.
+    %REVISAR REQUISITO
+    \item[RF06] \textbf{Consultar o próprio perfil:} A API deve disponibilizar os dados do veterinário autenticado nas respostas de autenticação e de sincronização.
+    %REVISAR REQUISITO
+    \item[RF07] \textbf{Atualizar o próprio perfil:} A API deve permitir a atualização do nome, CRMV e telefone do veterinário autenticado por meio da sincronização.
+    \item[RF08] \textbf{Gerenciar Tutores:} A API deve permitir cadastrar, consultar, atualizar e excluir logicamente tutores, armazenando dados de identificação, nascimento, contato e endereço, vinculados a um veterinário.
+    \item[RF09] \textbf{Gerenciar Pets:} A API deve permitir cadastrar, consultar, atualizar e excluir logicamente pets vinculados a tutores, armazenando nome, espécie, raça, data de nascimento e peso.
+    \item[RF10] \textbf{Gerenciar Prontuários:} A API deve permitir cadastrar, consultar, atualizar e excluir logicamente prontuários vinculados a animais e ao veterinário responsável.
+    \item[RF11] \textbf{Registrar informações clínicas:} A API deve permitir armazenar, no prontuário, data do atendimento, peso, temperatura, frequência cardíaca, anamnese, exame físico, prescrição, informações sobre vacinas e observações sobre pedidos e resultados de exames.
+    \item[RF12] \textbf{Gerenciar anexos de prontuários:} A API deve permitir cadastrar, consultar, atualizar e excluir logicamente metadados de anexos vinculados a prontuários, incluindo categoria, nome do arquivo, localização e tipo de conteúdo.
+    \item[RF13] \textbf{Receber arquivos de anexos:} A API deve permitir o envio de um arquivo para um anexo previamente cadastrado, atualizando sua localização, nome e tipo de conteúdo.
+    \item[RF14] \textbf{Receber imagens de tutores e animais:} A API deve permitir o envio de arquivos destinados aos avatares de tutores e animais previamente cadastrados, armazenando a URL correspondente.
+    \item[RF15] \textbf{Receber alterações da aplicação cliente:} A API deve receber, em uma requisição de sincronização, conjuntos de registros criados, atualizados e excluídos referentes a tutores, animais, prontuários e anexos, além de atualizações do próprio veterinário.
+    \item[RF16] \textbf{Disponibilizar a carga inicial de dados:} A API deve retornar os registros não excluídos associados ao veterinário autenticado quando não for informado um marco temporal válido de sincronização.
+    \item[RF17] \textbf{Disponibilizar alterações incrementais:} A API deve retornar os registros criados, atualizados e excluídos após o marco temporal informado, acompanhados de um novo marcador de tempo. Os dados do próprio veterinário são retornados no conjunto de atualizações em todas as consultas.
+    \item[RF18] \textbf{Propagar exclusões por sincronização:} A API deve registrar a exclusão lógica de tutores, animais, prontuários e anexos e informar seus identificadores nas sincronizações incrementais pertinentes.
+    %REVISAR REQUISITO
+    \item[RF19] \textbf{Disponibilizar administração interna:} O sistema deve disponibilizar uma interface administrativa para consulta e manutenção dos modelos registrados, conforme as permissões administrativas do usuário.
+    \item[RF20] \textbf{Sincronização Assíncrona:} O sistema deve detectar automaticamente o restabelecimento da conexão Wi-Fi ou Dados Móveis e realizar o upload dos dados pendentes sem interromper a navegação do usuário.
+    \item[RF21] \textbf{Painel de Status de Sincronização:} O sistema deve exibir uma lista ou indicador visual, como um ícone de "nuvem com check" ou "relógio" informando ao veterinário quais registros já estão seguros na nuvem.
+    \item[RF22] \textbf{Encerrar sessão:} O sistema deve permitir sair da conta, removendo os tokens e a referência da sessão ativa.
+    \item[RF23] \textbf{Restaurar sessão:} O sistema deve restaurar a sessão do veterinário ao reabrir o aplicativo, presente por identificação local.
+    \item[RF24] \textbf{Operar sem conexão:} O sistema deve permitir consultar e manter tutores, animais e prontuários localmente sem conexão, sincronizando posteriormente.
+    \item[RF25] \textbf{Autenticar \textit{offline}:} O sistema deve permitir autenticação local conforme política de credenciais previamente armazenadas.
+    \item[RF26] \textbf{Pesquisar registros:} O sistema deve permitir pesquisar tutores, animais e prontuários, incluindo informações relacionadas, como nome do tutor e do animal.
+    \item[RF27] \textbf{Filtrar e ordenar listagens:} O sistema deve permitir filtros e ordenação conforme a entidade: cidade, UF, espécie, raça, data e outros critérios disponíveis.
+    \item[RF28] \textbf{Alternar apresentação:} O sistema deve permitir alternar entre lista e grade nas listagens de tutores e animais.
+    \item[RF29] \textbf{Exibir painel inicial:} O sistema deve apresentar quantidade de atendimentos do dia e do mês, últimas consultas e atalhos para operações principais.
+    \item[RF30] \textbf{Informar sincronização:} O sistema deve apresentar a situação da conexão e da sincronização, incluindo o horário da última sincronização.
+    \item[RF31] \textbf{Confirmar exclusões em cascata:} O sistema deve informar o impacto da exclusão e solicitar confirmação antes de excluir um registro e seus dependentes.
+    \item[RF32] \textbf{Selecionar e abrir anexos:} O sistema deve permitir selecionar PDFs e imagens, classificá-los como solicitação ou resultado de exame e solicitar sua abertura.
+\end{description}
+
+\newpage
+\section{Requisitos Não Funcionais (RNF)}
+\label{sec:ap_rnf}
+
+\begin{description}[leftmargin=2.1cm, labelwidth=1.8cm, itemsep=0.5em]
+    \item[RNF01] \textbf{Autenticação das operações protegidas:} A API deve exigir autenticação JWT para sincronização e envio de arquivos.
+    \item[RNF02] \textbf{Proteção da senha de autenticação:} O sistema deve armazenar a senha de autenticação utilizando o mecanismo de hash do Django.
+    \item[RNF03] \textbf{Expiração dos tokens:} Os tokens devem ter validade limitada.
+    \item[RNF04] \textbf{Isolamento dos dados entre veterinários:} A API deve restringir as operações aos dados associados ao veterinário autenticado.
+    \item[RNF05] \textbf{Atomicidade do recebimento de alterações:} As alterações recebidas em uma requisição de sincronização devem ser processadas em uma transação de banco de dados, revertida caso ocorra uma falha que interrompa a operação.
+    \item[RNF06] \textbf{Persistência e integridade dos relacionamentos:} O sistema deve persistir os dados em banco relacional e representar os vínculos entre veterinários, tutores, animais, prontuários e anexos por chaves estrangeiras.
+    \item[RNF07] \textbf{Interoperabilidade na troca de dados:} A API deve oferecer comunicação por HTTP, com suporte a JSON para autenticação e sincronização e a multipart/form-data para envio de arquivos.
+    \item[RNF08] \textbf{Compatibilidade com o contrato de sincronização:} A API deve utilizar identificadores textuais compatíveis com os gerados pelo cliente, marcadores temporais em milissegundos e conjuntos de alterações \textit{created}, \textit{updated} e \textit{deleted}.
+    \item[RNF09] \textbf{Organização modular:} O código deve separar as responsabilidades de usuários, tutores, animais, prontuários e sincronização em módulos próprios.
+    \item[RNF10] \textbf{Persistência local:} O aplicativo deve preservar registros entre execuções e permitir acesso offline.
+    \item[RNF11] \textbf{Proteção das credenciais locais:} Os tokens devem receber proteção adequada à plataforma, e a senha local deve usar derivação resistente a tentativas de descoberta.
+    \item[RNF12] \textbf{Isolamento local entre contas:} Dados, alterações pendentes e marcos de sincronização devem permanecer isolados por veterinário, inclusive após troca de conta.
+    \item[RNF13] \textbf{Recuperação de falhas de comunicação:} O aplicativo deve repetir operações pendentes após reconexão ou falha temporária por meio de tentativas automáticas.
+    \item[RNF14] \textbf{Fidelidade do estado de sincronização:} O aplicativo deve distinguir dados locais salvos, metadados sincronizados, arquivos pendentes e falhas (Parcial: erros são apresentados como “sincronizando”, e o sucesso da sincronização não garante que todos os arquivos foram enviados).
+    \item[RNF15] \textbf{Integridade das operações locais:} Operações compostas devem evitar gravações parciais. A exclusão em cascata usa lote único, prontuário e anexos são criados em operações separadas.
+    \item[RNF16] \textbf{Acessibilidade:} A interface deve atender critérios definidos de leitura por tecnologias assistivas, navegação, contraste e ampliação de texto.
+\end{description}

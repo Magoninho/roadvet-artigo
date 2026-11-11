@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Customizações do abnTeX2                                            %%
+%% para a Universidade de Fortaleza                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{lib/preambulo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Configuracoes do uniforTeX2             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\trabalhoacademico{tccgraduacaoPDF}
+\trabalhoacademico{tccgraduacao}
+%\trabalhoacademico{tccespecializacao}
+%\trabalhoacademico{dissertacao}
+%\trabalhoacademico{tese}
+
+\ehqualificacao{nao}
+
+\removerbordasdohyperlink{sim}
+
+\cordohyperlink{nao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Informação sobre a IES                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ies{Universidade de Fortaleza}
+\iessigla{UNIFOR}
+\centro{Centro de Ciências Tecnológicas}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Informação para TCC de Graduacao        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graduacaoem{Ciência da Computação}
+\habilitacao{bacharel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Informação para TCC de Especializacao       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\especializacaoem{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Informação para Dissertacao             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\programamestrado{Programa de Pós-Graduação em Informática Aplicada}
+%\nomedomestrado{Mestrado Acadêmico em Ciência da Computação}
+%\mestreem{Ciência da Computação}
+%\areadeconcentracaomestrado{Ciência da Computação}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                 Informação para Tese            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\programadoutorado{Programa de Pós-Graduação em Informática Aplicada}
+%\nomedodoutorado{Doutorado em Saúde Coletiva}
+%\doutorem{Saúde Coletiva}
+%\areadeconcentracaodoutorado{Saúde Coletiva}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Informação relacionadas a trabalhos     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\autor{João Felipe Ribeiro de Melo \\ João Pedro Ribeiro Mendes}
+
+\titulo{
+ARQUITETURA DE SISTEMAS OFFLINE-FIRST COMO AMPARO À PRÁTICA
+VETERINÁRIA EM REGIÕES DE BAIXA CONECTIVIDADE.
+}
+
+\data{2026}
+
+\local{Fortaleza -- Ceará}
+
+%\dataaprovacao{01 de Janeiro de 2017}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Informação sobre o Orientador       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\orientador{Belmondo Rodrigues Aragão Júnior}
+%\orientadories{Universidade de Fortaleza - UNIFOR}
+%\orientadorcentro{Centro de Ciências Tecnológicas - CCT}
+%\orientadorfeminino{nao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Informação sobre o Co-orientador   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\coorientador{}
+%\coorientadories{Universidade Co-orientador - SIGLA}
+%\coorientadorcentro{Centro do Co-orientador - SIGLA}
+%\coorientadorfeminino{nao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Informação sobre a banca           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\membrodabancadois{Membro da Banca Dois}
+%\membrodabancadoiscentro{Centro de Ciências e Tecnologia - CCT}
+%\membrodabancadoisies{Universidade do Membro da Banca Dois - SIGLA}
+
+%\membrodabancatres{Membro da Banca Três}
+%\membrodabancatrescentro{Centro de Ciências e Tecnologia - CCT}
+%\membrodabancatresies{Universidade do Membro da Banca Três - SIGLA}
+
+%\membrodabancaquatro{Membro da Banca Quatro}
+%\membrodabancaquatrocentro{Centro de Ciências e Tecnologia - CCT}
+%\membrodabancaquatroies{Universidade do Membro da Banca Quatro - SIGLA}
+
+%\membrodabancacinco{Membro da Banca Cinco}
+%\membrodabancacincocentro{Centro de Ciências e Tecnologia - CCT}
+%\membrodabancacincoies{Universidade do Membro da Banca Cinco - SIGLA}
+
+%\membrodabancaseis{Membro da Banca Seis}
+%\membrodabancaseiscentro{Centro de Ciências e Tecnologia - CCT}
+%\membrodabancaseisies{Universidade do Membro da Banca Seis - SIGLA}
+
+\usepackage{float}
+
+\makeatletter
+\renewcommand{\folhaderostocontent}{%
+    \begin{center}
+        \normalsize
+        \MakeUppercase{\imprimirautor}\par
+        \vspace{6.5cm}
+        \MakeUppercase{\imprimirtitulo}\par
+    \end{center}
+
+    \vspace{2.5cm}
+
+    \noindent
+    \hspace*{6cm}%
+    \begin{minipage}{8cm}
+        \begin{SingleSpace}
+            \imprimirpreambulo\par
+            \medskip
+
+            \abntex@ifnotempty{\imprimirorientador}{%
+                \noindent
+                \artigoorientador:
+                \imprimirorientador\par
+            }
+
+            \abntex@ifnotempty{\imprimircoorientador}{%
+                \noindent
+                \artigocoorientador:
+                \imprimircoorientador\par
+            }
+        \end{SingleSpace}
+    \end{minipage}
+
+    \vfill
+
+    \begin{center}
+        \normalsize
+        \MakeUppercase{\imprimirlocal}\par
+        \imprimirdata\par
+    \end{center}
+}
+\makeatother
+
+\begin{document}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Elementos pré-textuais                                            %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \imprimircapa
+    \begin{folhaderosto}
+        \folhaderostocontent
+    \end{folhaderosto}    % Ficha catalográfica inserida como PDF%
+    %\includepdf{elementos-pre-textuais/ficha-catalografica.pdf}%
+    % Errata incluída via arquivo .tex%
+    %\input{elementos-pre-textuais/errata}
+
+    % Folha de aprovação inserida como PDF}
+    %\includepdf{elementos-pre-textuais/folha-aprovacao.pdf}
+    
+    \imprimirdedicatoria{elementos-pre-textuais/dedicatoria}
+    \imprimiragradecimentos{elementos-pre-textuais/agradecimentos}
+    \imprimirepigrafe{elementos-pre-textuais/epigrafe}
+    \imprimirresumo{elementos-pre-textuais/resumo}
+    \imprimirabstract{elementos-pre-textuais/abstract}
+    \imprimirlistadeilustracoes
+    %\imprimirlistadetabelas
+    %\imprimirlistadequadros
+    %\imprimirlistadealgoritmos
+    %\imprimirlistadecodigosfonte
+    \glsaddall[types={\acronymtype}]
+    \imprimirlistadeabreviaturasesiglas
+    %\imprimirlistadesimbolos{elementos-pre-textuais/lista-de-simbolos} % Comentado temporariamente para evitar erro de lista vazia
+    \imprimirsumario
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Elementos textuais                                                %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \textual
+
+    \input{elementos-textuais/introducao}
+    \input{elementos-textuais/fundamentacao-teorica}
+    \input{elementos-textuais/trabalhos-relacionados}
+    \input{elementos-textuais/metodologia}
+    \input{elementos-textuais/roadvet}
+    \input{elementos-textuais/resultados}
+    \input{elementos-textuais/conclusao}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% Elementos pós-textuais                                            %%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \postextual
+
+    \nocite{nibblett2015,pimazzoni2023,fielding2000,kleppmann2017}
+    \nocite{reactnative,drf,watermelondb,sqlite}
+    \nocite{simplesvet,leisansao2020,lgpd2018}
+    \bibliography{elementos-pos-textuais/referencias}
+
+    \glsaddall[types={main}]
+    \imprimirglossario
+    
+    \imprimirapendices
+        % Adicione aqui os apendices do seu trabalho
+        \input{elementos-pos-textuais/apendices/requisitos}
+        %\input{elementos-pos-textuais/apendices/lorem-ipsum}
+        %\input{elementos-pos-textuais/apendices/termo-de-fiel-depositario}
+        
+    %\imprimiranexos
+        % Adicione aqui os anexos do seu trabalho
+        %\input{elementos-pos-textuais/anexos/exemplo-de-anexo}
+        %\input{elementos-pos-textuais/anexos/dinamica-das-classes-sociais}
+        
+    \imprimirindice
+
+\end{document}

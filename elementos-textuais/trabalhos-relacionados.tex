@@ -1,0 +1,32 @@
+\chapter{Trabalhos Relacionados}
+%SUGESTÃO DE TABELA COMPARATIVA ENTRE O ROADVET E OS DOIS TRABALHOS RELACIONADOS
+\label{cap:trabalhos-relacionados}
+Neste capítulo, são apresentados trabalhos que possuem similaridade com a proposta deste projeto, seja pelo domínio da aplicação, se referindo ao setor veterinário ou pela abordagem tecnológica, se tratando de aplicações mobile ou sincronização de dados.
+
+\section{Prontuário Eletrônico Veterinário com Geolocalização (Pimazzoni, 2023)}
+\label{sec:trabalho-relacionado-a}
+
+O trabalho de Pimazzoni (2023) apresenta o desenvolvimento de um sistema de informações em saúde veterinária focado na integração de prontuários eletrônicos e geolocalização, com o objetivo de mapear áreas de maior incidência de zoonoses. A pesquisa destaca a necessidade de centralizar dados clínicos para melhorar a tomada de decisão do médico veterinário, além de estimular a atualização da base de dados com as infecções interespécie e seus respectivos vetores de transmissão, podendo tornar a prevenção e o tratamento futuro dessas doenças mais fácil.
+
+A aplicação VetWeb, desenvolvida a partir da pesquisa em questão, baseou-se no problema da escassez de dados públicos que tratem de doenças transmitidas entre animais e humanos, essas informações poderiam ser utilizadas posteriormente para pesquisas em saúde e disponibilizadas à população em geral, bem como no atraso gerado pela criação de prontuários manuais. O sistema possui telas voltadas para o cadastro de tutores, de pacientes e para a criação de prontuários clínicos, destinados à prescrição de exames, procedimentos e administração de vacinas. Além disso, cada paciente cadastrado na aplicação é devidamente localizado no mapa a partir do CEP fornecido em seu cadastro.
+
+O sistema se utiliza de uma arquitetura cliente-servidor, além de estar disponível como aplicação mobile e sistema web, desenvolvido utilizando a linguagem PHP.
+
+%Similaridades: Ambos os trabalhos focam na digitalização do prontuário veterinário e na mobilidade, utilizando tecnologias modernas para facilitar o acesso do profissional aos dados do paciente.
+
+%Diferenças: O trabalho de Pimazzoni foca intensamente na geolocalização e na gestão hospitalar centralizada. Em contrapartida, esta proposta diferencia-se ao priorizar a arquitetura offline-first. Enquanto o sistema citado pressupõe uma infraestrutura de rede para a maioria das operações, este projeto foca na resiliência do dado em locais de sombra de sinal (atendimento domiciliar rural ou remoto).
+
+
+\section{Plataforma SimplesVet (Solução Comercial)}
+\label{sec:trabalho-relacionado-b}
+O SimplesVet é um dos principais \textit{softwares} de gestão veterinária no Brasil. Ele oferece módulos de prontuário, controle de estoque e financeiro, protocolos de vacina e planos pagos, operando majoritariamente no modelo \textit{Software as a service }(SaaS). Essa aplicação auxilia no dia a dia dos veterinários, facilitando o trabalho em clínicas veterinárias, hospitais veterinários e petshops. É uma aplicação focada em empresas do ramo, pois além de fornecer as ferramentas para o uso do veterinário, ela também foca no controle financeiro da empresa que assina a plataforma, promovendo telas para controle financeiro, como também estoque e serviços. 
+
+Sobre a arquitetura do sistema, o SimplesVet foca em um arquitetura baseada em nuvem, eliminando a necessidade de servidores locais. Além disso, os dados que salvos no servidor da aplicação, vindos de diferentes pontos são centralizados em uma única base de dados, como também a entrega desses dados em Dashboards profissionais, para medir o sucesso do SimplesVet no mercado, com o uso de métricas de desempenho.
+
+Apesar de fornecer funcionalidades voltadas para o mercado veterinário, a solução SimplesVet ainda não pensou em atender o público que trabalha em locais sem conexão com a internet, como áreas isoladas de grandes cidades e áreas interioranas, portanto o sistema não possui uma ferramenta que permite o seu uso sem a internet, como também não disponibiliza uma solução mobile, que é mais palpável para o atendimento domiciliar. 
+
+
+
+    %Similaridades: A plataforma atende às necessidades de gerenciamento de clínicas e profissionais autônomos, oferecendo uma interface amigável e armazenamento em nuvem.
+    
+    %Diferenças: Por ser uma aplicação baseada em nuvem, o SimplesVet apresenta limitações severas em ambientes sem conectividade. Caso o veterinário esteja em um atendimento domiciliar sem sinal de internet, o acesso e a inserção de novos dados clínicos são comprometidos. O presente trabalho ataca justamente essa lacuna, propondo uma solução que garante a persistência local imediata e a sincronização posterior, garantindo que o fluxo de trabalho não seja interrompido pela infraestrutura de rede.%

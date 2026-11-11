@@ -1,0 +1,70 @@
+\chapter{Fundamentação Teórica}
+\label{cap:fundamentacao-teorica}
+
+Esta seção apresenta a fundamentação teórica que embasa este projeto de conclusão de curso. Inicialmente é discutido o crescimento do cuidado animal
+
+\section{Cuidado animal}
+Atualmente percebe-se um crescimento da população de animais de estimação e a mudança nos perfis familiares, no qual os pets ocupam o patamar de membros da família. Isto tem impulsionado a demanda por serviços médico-veterinários mais ágeis, especializados e descentralizados. Dados recentes do setor indicam que o Brasil se destaca entre os países com maior população de pets do mundo, registrando altas taxas de animais por domicílio, o que intensifica a necessidade de assistência clínica constante (Instituto Pet Brasil, 2023;Abinpet, 2023). Esse cenário de forte apelo afetivo e econômico estimula a expansão de novas modalidades de prestação de serviços, com destaque para o atendimento clínico domiciliar.
+
+\begin{figure}[H] 
+    \centering 
+    \caption{Gráfico que mostra posição do Brasil na população de pets no mundo, no ano de 2023} 
+    \label{fig:graficopetsmundo} 
+    \includegraphics[
+        width=0.5\linewidth,
+        height=0.65\textheight,
+        keepaspectratio
+    ]{brasil_pets_mundo.png}
+    \fonte{https://www.petconectadigital.com.br/panorama-petvet/populacao-de-pets-no-brasil-ja-e-3a-maior-do-mundo}
+\end{figure}
+
+
+Essa mudança de perfil social das famílias, onde o pet passou a ser um membro de vital importância, tornou os tutores muito mais vigilantes e engajados com a transparência do cuidado do seu animal de estimação. Como consequência, todos os meios que se dedicam ao tratamento animal passaram a ser mais cautelosos com o bem-estar dos bichos de estimação. A expansão da demanda por cuidados de saúde e bem-estar animal reflete-se no aumento de cerca de 22\% na abertura de novos estabelecimentos e serviços veterinários no país nos últimos anos, totalizando mais de 202 mil pontos de atendimento (SEBRAE, 2025; INSTITUTO PET BRASIL, 2024).
+
+Ademais, notou-se uma mudança social expressiva no que tange à preocupação com a fauna urbana e doméstica. As pessoas passaram a se tornar mais conscientes quanto à senciência e valorização da vida animal (BRASIL, 2024), o que motivou a criação e o endurecimento de arcabouços jurídicos, como a Lei Sansão \href{https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l14064.htm#}{(Lei nº 14.064/2020)}, que elevou as penas para crimes contra cães e gatos (BRASIL, 2020), além do fortalecimento do terceiro setor (ONGs) para acolhimento de animais vulneráveis. Concomitantemente, o incentivo à adoção de animais resgatados das ruas teve uma alta significativa, impulsionando a expansão da população pet integradas aos lares brasileiros (INSTITUTO PET BRASIL, 2023).
+
+Paralelamente a essa expansão do mercado pet, a transformação digital na saúde tem impulsionado a transição de registros físicos para sistemas de informação complexos (Pimazzoni, 2023). No contexto da medicina veterinária, essa evolução não se limita apenas à substituição do papel, mas abrange a otimização de processos clínicos e a exigência de alta mobilidade profissional. A eficiência no diagnóstico e na conduta terapêutica está diretamente ligada à disponibilidade imediata do histórico do paciente. Contudo, essa premissa esbarra em um obstáculo técnico crítico em cenários de atendimento externo, visto que os profissionais dependem de dispositivos móveis e as aplicações atuais muitas vezes falham em suprir essa demanda operacional em locais com conexão instável ou ausente.
+
+\begin{figure}[H] 
+    \centering 
+    \caption{Ilustração do Cuidado animal} 
+    \label{fig:cuidadoanimal} 
+    \includegraphics[
+        width=0.5\linewidth,
+        height=0.65\textheight,
+        keepaspectratio
+    ]{gato_vet.jpg}
+    \fonte{https://unsplash.com/pt-br/fotografias/pessoa-segurando-gato-tabby-prateado-tDlo2ZPlQlU}
+\end{figure}
+
+%DESENVOLVER MAIS A IDEIA DO CUIDADO PET
+%Trazer mais informaÇÕes
+%trazer imagens (dados, mapas)
+%Buscar refletir as necessidades sociais/animais/cuidados que o sistema tem
+
+
+
+\section{Estratégias de Persistência e o Paradigma Offline-First}
+%DESENVOLVER MAIS E DEIXAR UMA VISÃO MAIS AMPLA DO OFFLINE FIRST
+\label{sec:fundamentacao-teorica-a}
+O conceito de \textit{offline-first} baseia-se na ideia de manipular dados quando não há conexão com a internet. Embora a maioria dos dados produzidos e compartilhados globalmente ocorra por meio da rede mundial de computadores, os sistemas \textit{offline-first} tratam a falta de conectividade não como um erro, mas como um estado previsível do sistema (Kleppman, 2017). Esse paradigma assume grande relevância na área de tecnologia da informação e no desenvolvimento de aplicações. Quando o foco principal de uma aplicação deixa de depender da presença de conexão com a internet, o paradigma atua como agente de persistência em sistemas desenvolvidos para operar de forma desconectada.
+
+Diferentemente de sistemas que operam exclusivamente conectados e armazenam seus dados em servidores remotos, as aplicações que seguem esse paradigma utilizam o armazenamento local do dispositivo no qual são instaladas, seja um smartphone ou um computador. Por meio da camada de cliente, com a qual o usuário interage, os dados são persistidos localmente, assim, sempre que requisitados, são carregados dessa base local e exibidos ao usuário por meio de tecnologias como o \textit{WatermelonDB}, ferramenta integrada ao \textit{React Native} para a preservação de dados.
+
+Embora esse modelo priorize os dados salvos localmente, a arquitetura ainda pode contar com um servidor remoto para possibilitar o funcionamento conectado. Portanto, na ausência de rede, os dados são manipulados de forma \textit{offline}, mas quando o sinal retorna, o servidor sincroniza essas informações com o banco de dados principal da aplicação. Essa sincronização ocorre de forma assíncrona: quando a conexão é restabelecida, o sistema executa um protocolo de reconciliação para garantir que os dados inseridos localmente sejam integrados ao banco de dados principal no servidor de forma íntegra.
+
+\section{Aspectos de Segurança e Proteção de Dados (LGPD)}
+O crescimento constante das aplicações da área veterinária demanda uma segurança delicada do grande número de dados que são gerados por seus usuários. Conforme estabelece a LGPD - Lei nº 13.709/2018 \footnote{\url{https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm}}
+ sobre o tratamento de dados pessoais no âmbito digital, garante-se a proteção desses dados, sejam de pessoa física, jurídica, de direito público ou privado. As decisões de segurança são pautadas na tríade CID(Confidencialidade, Integridade e Disponibilidade). A confidencialidade assegura que os dados coletados na camada do cliente não sofram interceptações de terceiros, a integridade garante que os arquivos não sofram nenhuma mudança em seu conteúdo, a disponibilidade garante que os dados salvos no banco de dados estejam sempre disponíveis para acesso, conforme o tempo que se comprometeu em se dispor.
+
+Conforme é orientado, o tratamento dos dados coletados dos usuários, serão somente realizados nas hipóteses escritas no Artigo 7º da referida lei. Para a seguinte aplicação foram cumpridas as seguintes hipóteses:
+
+\begin{itemize}
+     \renewcommand\labelitemi{-}
+		\item \textbf{Consentimento (Art. 7º, I):} trata da livre manifestação do usuário pela escolha do tratamento ou não tratamentos dos seus dados pessoais.
+		\item \textbf{Cumprimento de Obrigação Legal ou Regulatória (Art. 7º, II):} justifica a coleta dos dados, quando requisitadas por outras regulações, como resoluções do Conselho Federal de Medicina Veterinária (CFMV) ligadas à guarda e emissão de prontuários
+        \item \textbf{Legítimo Interesse (Art. 7º, IX):} permite o tratamento dos dados fornecidos pelos usuários, para fins pessoais da aplicação, desde que não impactem de forma negativa nos direitos de liberdade fundamentais do cidadão.
+	\end{itemize}
+
+Além disso, vale destacar que o manuseio de dados pessoais relacionados a informações clínicas é integralmente regido pela LGPD. Em contrapartida, os dados referentes aos animais não se enquadram no escopo da Lei Geral de Proteção de Dados, portanto, qualquer informação inserida no sistema associada a um animal, como nome do pet, gênero, raça, peso, temperatura, entre outros é vinculada à pessoa natural que se caracteriza como seu tutor.
+%Buscar sobre a relação dos dados animais com a LGPD.

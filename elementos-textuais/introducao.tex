@@ -1,0 +1,46 @@
+\chapter{Introdução}
+\label{cap:introducao}
+
+% Os algoritmos de aprendizado de máquina que fazem classificação em imagens, necessitam que estas sejam de baixa dimensionalidade \cite{yang2019re} . \gls{KNN} askjdhkjasdhj ashdkajsdhajkhj \gls{KNN}
+
+No cenário contemporâneo de digitalização dos serviços, o setor médico-veterinário enfrenta o desafio de transpor a eficiência clínica para o ambiente domiciliar. Essa transição é impulsionada não apenas pela demanda por conveniência, mas sobretudo pelo bem-estar animal. Ao analisar o comportamento felino, observou-se que "os gatos apresentaram níveis de estresse significativamente menores quando examinados em um ambiente doméstico em comparação com um ambiente clínico", (Nibblett, 2015). Diante disso, torna-se imperativo o desenvolvimento de ferramentas robustas voltadas especificamente para a gestão do atendimento remoto e volante.
+
+Tendo isso em vista, médicos veterinários que atuam em atendimentos domiciliares enfrentam desafios acentuados que comprometem a agilidade e a segurança do serviço. A dependência de conectividade constante cria uma barreira crítica: em localidades com infraestrutura de rede deficitária, o uso de sistemas baseados exclusivamente na presença de internet e nuvem, frequentemente inviabiliza o fluxo ideal, forçando o veterinário a recorrer a registros improvisados em papel ou na memória. Estudos na área de informática em saúde apontam que essa fragmentação da informação eleva significativamente o risco de perda de dados, problemas de legibilidade e erros de transcrição posterior (F.L Pollari, 1996). Além das falhas operacionais, essa dinâmica impede o acesso imediato ao histórico clínico completo do paciente no local de atendimento, momento crucial do exame clínico no qual a tomada de decisão exige rapidez e fundamentação baseada em evidências (Kristine M. Alpi, 2011).
+
+De que foram uma arquitetura \textit{offline-first} pode contribuir para a sincronização de dados clínico-veterinários em contextos de baixa conectividade? Diante desse problema, é necessária a investigação de técnicas que contribuam com o armazenamento de dados de uma aplicação veterinária, de forma que, sem a presença de internet no dispositivo móvel do usuário, os dados sejam persistidos primeiramente na camada local e, posteriormente, no servidor. Para alcançar esse objetivo, o seguinte trabalho apresenta o desenvolvimento do RoadVet, uma aplicação móvel voltada para médicos veterinários autônomos que atuam em atendimento domiciliar, baseada na arquitetura \textit{offline-first}, arquitetura que prioriza o uso da aplicação no dispositivo do usuário, buscando que os dados sejam salvos primordialmente na camada de apresentação, que no presente trabalho é implementada com a tecnologia \textit{React Native} para a interface do usuário e a biblioteca \textit{WatermelonDB}, responsável por persistir esses dados no dispositivo do veterinário, quando a conexão com a internet é identificada, os dados que foram criados são sincronizados com a camada de suporte, que foi abstraída como uma API(\textit{Application Programming Interface}), construída utilizando o\textit{ Django Rest Framework} e um banco de dados relacional\textit{ SQLite}, para manter as informações acessíveis.
+
+Além desta introdução, o presente documento está estruturado da seguinte maneira: o Capítulo ~\ref{cap:fundamentacao-teorica} trata da fundamentação teórica, abordando o mercado de cuidado animal e o meio social, o paradigma \textit{offline-first} e a legislação que apoia esses animais de estimação. O capítulo ~\ref{cap:trabalhos-relacionados} traz os trabalhos relacionados que serviram como exemplo para o desenvolvimento do RoadVet. O capítulo ~\ref{chap:metodologia} destaca a metodologia adotada, que envolve a caracterização da pesquisa, discussão com profissionais da área veterinária, processo de levantamento de requisitos, com alguns exemplos, definição da arquitetura da aplicação que foi desenvolvida e o procedimento de validação e testes adotados. O capítulo ~\ref{cap:roadvet} trata do detalhamento do desenvolvimento do RoadVet, demonstrando visualmente o fluxo da aplicação, entre\textit{ back-end} e \textit{front-end}, uma visão geral do aplicativo móvel e a especificação do fluxo de uso principal do RoadVet. O capítulo ~\ref{cap:conclusao} debate as conclusões, dificuldades encontradas e os trabalhos futuros.
+
+% \ref{fig:fluxogramaDeAlgumaCoisa}. 
+
+% \ref{fig:oficial}
+
+\section{Motivação}
+\label{sec:motivacao}
+
+Neste contexto, percebe-se que o uso de ferramentas tecnológicas que não dependam de acesso a Internet podem ajudar o trabalho de um veterinário domiciliar. Ao desenvolver uma solução que funcione de maneira \textit{offline}, busca-se otimizar o tempo desses profissionais, ao mesmo tempo que oferecer um serviço que aumente a eficiência e qualidade do cuidado animal, permitindo que o foco permaneça no atendimento e não nas limitações tecnológicas do local.
+
+Este desenvolvimento estabelece, ainda, o alicerce necessário para futuras expansões modulares, como a otimização logística de deslocamentos.
+
+\section{Objetivos}
+\label{sec:objetivos}
+
+Este trabalho tem como objetivo abordar o tema proposto e identificar as principais necessidades de médicos veterinários. A seguir, são apresentados os objetivos geral e específicos que norteiam este trabalho.
+
+\subsection{Objetivo Geral}
+\label{sec:objetivo-geral}
+
+Desenvolver uma aplicação móvel voltada para atendimentos médico-veterinários domiciliares, utilizando uma arquitetura \textit{offline-first} capaz de persistir localmente e sincronizar no servidor, os dados, mesmo em ambientes de baixa conexão com a internet.
+
+\subsection{Objetivos Específicos}
+\label{sec:objetivos-especificos}
+
+Os objetivos específicos do presente trabalho consistem na implementação da estratégia \textit{offline-first}, que foca na persistência de dados, partindo da camada do cliente. Essa abordagem visa garantir que os dados inseridos pelo usuário sejam sincronizados no servidor. Para tanto definem-se os seguintes passos: 
+
+	\begin{itemize}
+     \renewcommand\labelitemi{-}
+		\item Analisar e implementar tecnologias existentes que sejam capazes de persistir os dados localmente, em dispositivos móveis.
+		\item Implementar tecnologia de armazenamento local na camada do usuário, de forma que sejam visíveis os dados que ainda não foram sincronizados com o servidor.
+        \item Projetar mecanismo de sincronização assíncrona.
+		\item Realizar simulação de testes clínicos reais, de forma que o usuário final tenha uma arquitetura segura.
+	\end{itemize}

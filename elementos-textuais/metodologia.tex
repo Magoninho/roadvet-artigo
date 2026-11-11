@@ -1,0 +1,67 @@
+\chapter{Metodologia}
+\label{chap:metodologia}
+
+%CARACTERIZTAR TODO O PROCESSO DE DESENVOLVIEMNTO DO TRABALHO, USANDO OS VERBOS NO FUTURO, DE FORMA QUE UMA PESSOA ENTENDA TODO O PROCESSOS DESTRINCHADO DE DESENVOLVIMENTO DO PROJETO.
+
+A metodologia adotada para este trabalho fundamenta-se na pesquisa aplicada e no desenvolvimento experimental. O processo foi estruturado de forma a abranger a discussão com profissionais da área veterinária, o levantamento de requisitos, a definição da arquitetura do sistema, o desenvolvimento do projeto utilizando \textit{React Native} e \textit{Django Rest Framework} e, por fim, a realização de testes de sincronização em cenários de intermitência de rede.
+
+%A PESQUISA É APENAS QUANTITATIVA! CORRIGIR ISSO
+\section{Caracterização da Pesquisa}
+
+O presente trabalho científico classifica-se como uma pesquisa aplicada. De acordo com Gil (2022), a pesquisa aplicada caracteriza-se pelo interesse prático, estando voltada para a aquisição de conhecimentos com vistas à aplicação direta e à solução de problemas específicos da realidade. No contexto desta pesquisa, o uso dessa abordagem é justificado pelo desenvolvimento de uma aplicação móvel com o objetivo de permitir que o antedimento em ambientes veterinário-domiciliares não seja interrompido pela perca de conexão com a internet.
+
+Os objetivos desta pesquisa são caracterizados como exploratórios e descritivos. Apresenta caráter exploratório pois se aprofunda nos desafios de sincronização em cenários de baixa conectividade no atendimento domiciliar, como também se baseia em um problema pouco conhecido na sociedade. Adicionalmente, manifesta-se como descritiva ao detalhar o comportamento e a eficiência das tecnologias utilizadas, com foco no \textit{framework} \textit{Django Rest Framework} e na biblioteca \textit{React Native}, demonstrando como chegar ao resultado final, desde o levantamento de requisitos até a aplicação final.
+
+A abordagem do seguinte trabalho se caracteriza como quantitativa, se revela dessa forma quando se preocupa com a sincronização dos dados e com a persistência dos deles, tanto na camada de suporte como na camada de cliente.
+%A ABORDAGEM É NA VERDADE QUANTITATIVA
+
+O método utilizado na pesquisa foi o método da engenharia (ou \textit{Design Science Research}). Visto que o presente projeto visou resolver um problema social, para com os médicos veterinários a domicílio através do uso de ferramentes de desenvolvimento de \textit{software} para todas as camadas da aplicação. O percurso metodológico seguiu o ciclo heurístico de identificar as principais dores dos veterinários domiciliares, mapear os requisitos de persistência local de dados, projetar a arquitetura offline-first, implementar o protótipo funcional e, por fim, avaliar a eficácia do sistema sob condições simuladas de falta de conectividade, gerando conhecimento tanto sobre o artefato quanto sobre o processo de sua criação.
+
+Quanto aos procedimentos técnicos, o trabalho baseia-se no desenvolvimento experimental. Essa vertente envolve a execução de testes exaustivos em cenários de baixa conexão por meio de ambientes controlados, permitindo validar empiricamente a eficácia dos mecanismos de sincronização e persistência dos dados manipulados.
+
+\section{Discussões com Profissionais da área Veterinária}
+Para o desenvolvimento deste trabalho, o primeiro passo consistiu em contatar profissionais da área veterinária, preferencialmente atuantes de forma autônoma, com o objetivo de iniciar conversas a respeito de sua rotina diária e de identificar as principais dificuldades encontradas no exercício da profissão. Essas interações foram conduzidas de maneira aberta e colaborativa, permitindo que os profissionais relatassem as nuances percebidas ao longo de sua trajetória e auxiliassem na definição dos pontos prioritários a serem considerados no desenvolvimento do aplicativo. Todas as propostas consideradas viáveis e aplicáveis ao escopo do projeto foram devidamente registradas e utilizadas posteriormente para embasar o levantamento de requisitos.
+
+\section{Levantamento de Requisitos}
+%TRAZER UMA LISTA DOS REQUISITOS DO NOTION
+Após a primeira etapa de reconhecimento dos principais problemas que assolam os veterinários domiciliares, foram definidos os requisitos da aplicação, divididos em funcionais e não funcionais, essas definições foram primordiais para promover uma maior organização de prioridades no desenvolvimento do aplicativo. Requisitos funcionais são as funcionalidades indispensáveis da aplicação, aquelas que não podem deixar de ser implementadas, pois são básicas para a resolução do problema que é proposto a ser resolvido pelo sistema, já os requisitos não funcionais se caracterizam-se como os atributos de qualidade, restrições e critérios técnicos que moldam a forma como o sistema opera, abrangendo aspectos de segurança, desempenho e arquitetura.
+
+Para anotar os requisitos do presente projeto, foi utilizada a ferramente\textit{ Notion}, que funciona como um organizador de ideias e anotações digital, na plataforma citada, foi definido um módulo que classificou os requisitos como funcionais e não funcionais, como também classificou sua prioridade de aplicação, divididos em média, baixa e alta prioridade, influenciando diretamente nas decisões finais do aplicativo conforme era posto em prática a digitação do código.
+
+A fim de ilustrar a estrutura adotada, estão representados abaixo alguns requisitos que se detacam como de maior importância para o sistema. A lista completa de todos os requisitos encontra-se disposto no Apêndice ~\ref{ap:requisitos} deste trabalho.
+
+%DEIXAR 5 REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS E COLOCAR O RESTO PARA O APÊNDICE
+\subsection{Requisitos Funcionais (RF) (Amostra)}
+
+\begin{itemize}
+    \item \textbf{RF01 -- Cadastrar veterinários:} A aplicação deve permitir o cadastro de veterinários mediante identificador, nome, e-mail e senha, com CRMV e telefone opcionais.
+
+    \item \textbf{RF10 -- Gerenciar Prontuários:} A API deve permitir cadastrar, consultar, atualizar e excluir logicamente prontuários vinculados a animais e ao veterinário responsável.
+
+    \item \textbf{RF20 -- Sincronização Assíncrona:} O sistema deve detectar automaticamente o restabelecimento da conexão Wi-Fi ou Dados Móveis e realizar o upload dos dados pendentes sem interromper a navegação do usuário.
+
+    \item \textbf{RF24 -- Operar sem conexão:} A aplicação deve permitir consultar e manter tutores, animais e prontuários localmente sem conexão, sincronizando posteriormente.
+
+\end{itemize}
+
+\subsection{Requisitos Não Funcionais (RNF) (Amostra)}
+
+\begin{itemize}
+    \item \textbf{RNF01 -- Autenticação das operações protegidas:} A API deve exigir autenticação JWT para sincronização e envio de arquivos.
+    
+    \item \textbf{RNF04 -- Isolamento dos dados entre veterinários:} A API deve restringir estritamente as operações aos dados associados ao veterinário autenticado.
+    
+    \item \textbf{RNF05 -- Atomicidade do recebimento de alterações:} As alterações recebidas em uma requisição de sincronização devem ser processadas em uma única transação de banco de dados, sendo revertidas caso ocorra uma falha que interrompa a operação.
+    
+    \item \textbf{RNF10 -- Persistência local:} O aplicativo deve preservar registros entre execuções e permitir acesso offline.
+    
+\end{itemize}
+
+\section{Definição da Arquitetura de Sistema e Desenvolvimento da Aplicação}
+%FALAR DE MANEIRA GERAL
+Após o estudo dos diversos tipos de aplicações móveis, foram definidas as arquiteturas para as diferentes camadas do sistema. Inicialmente, estruturou-se a arquitetura de banco de dados, que reúne o modelo de cada entidade envolvida na lógica de negócio, especificando os tipos de campos, como chaves primárias e tipos primitivos de dados e as respectivas relações entre as tabelas. Em seguida, definiu-se a arquitetura de front-end, responsável pela construção da interface do usuário e da persistência de dados local. Por fim, estruturou-se a camada do servidor, que centraliza a lógica de negócio e o gerenciamento das requisições globais.
+
+\section{Procedimentos de Validação e Testes}
+Para validar o funcionamento da aplicação, foi projeto um ambiente de testes controlado, que buscou se aproximar de situações reais vividas pelos profissionais da área veterinária domiciliar. Durante a fase de testes, as camadas de cliente e de suporte foram testadas individualmente e em conjunto, em situações com e sem presença de internet.
+
+Quanto à execução dos testes, a aplicação foi executada em ambiente simulado no computador, inicializando a API e o front-end simultaneamente. Em seguida, realizaram-se cadastros de entidades com dados fictícios, inicialmente com acesso pleno à internet e, posteriormente, com a interrupção intencional da conexão. Esse procedimento teve o objetivo de validar a persistência dos dados no modo \textit{offline}. Por fim, a conectividade foi restabelecida para verificar a correta execução da sincronização com o servidor.
