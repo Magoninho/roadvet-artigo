@@ -1,9 +1,9 @@
-PWD /home/jfribeiro/Downloads/TCC_Unifor_corrigido
+PWD /home/jpmendes/Projects/roadvet-artigo
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/jfribeiro/Downloads/TCC_Unifor_corrigido/main.tex
+INPUT main.tex
 OUTPUT main.log
 INPUT ./lib/preambulo.tex
 INPUT ./lib/preambulo.tex
@@ -529,6 +529,11 @@ INPUT ./elementos-textuais/trabalhos-relacionados.tex
 INPUT ./elementos-textuais/trabalhos-relacionados.tex
 INPUT elementos-textuais/trabalhos-relacionados.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb8c.vf
+INPUT ./tabela_trabalhos_relacionados.png
+INPUT ./tabela_trabalhos_relacionados.png
+INPUT ./tabela_trabalhos_relacionados.png
+INPUT ./tabela_trabalhos_relacionados.png
+INPUT ./tabela_trabalhos_relacionados.png
 INPUT ./elementos-textuais/metodologia.tex
 INPUT ./elementos-textuais/metodologia.tex
 INPUT ./elementos-textuais/metodologia.tex

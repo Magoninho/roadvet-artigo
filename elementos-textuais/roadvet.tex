@@ -174,15 +174,13 @@ Para a camada de suporte, utilizou-se o \textit{Django REST Framework} (DRF) par
 \section{Estratégia de Persistência e Sincronização}
 As estratégias utilizadas para persistir e sincronizar os dados em ambas as camadas projetadas no sistema foram estruturadas seguindo o conceito de arquitetura \textit{offline-first}. Essa abordagem garante que a aplicação móvel permaneça plenamente operacional para o médico veterinário mesmo em locais sem cobertura de rede, postergando a comunicação com o servidor para o momento em que a conectividade for restabelecida.
 
-%REVISAR ESSE PARÁGRAFO
 Na camada do cliente \textit{(front-end)}, o mecanismo de persistência local fundamenta-se na utilização da biblioteca \textit{WatermelonDB}. Por se tratar de um banco de dados reativo e local estruturado sobre o SQLite, a ferramenta permite gerenciar os dados relacionais dos prontuários clínicos diretamente no dispositivo de forma assíncrona. Para viabilizar o controle do fluxo de dados, cada registro manipulado localmente incorpora metadados de controle, especificamente uma marca temporal \textit{(timestamp)} da última modificação e uma flag indicadora de status de sincronização mapeada entre os estados pendente e sincronizado.
 
 O processo de sincronização foi projetado a partir de uma estrutura de fila de eventos, cujo comportamento operacional é ditado pela detecção dinâmica do estado da rede, conforme descrito a seguir:
 
 \begin{itemize}
-    \item \textbf{Fluxo em Modo Offline:} Caso o dispositivo detecte a ausência de conexão à internet ou as requisições HTTP retornem falha por indisponibilidade de rede, as operações de CRUD são desviadas e executadas estritamente no \textit{WatermelonDB}. O registro correspondente é marcado com o \textit{status} de pendente e a operação é empilhada na fila local de sincronização.
-    %REVER COMO FUNCIONA AGORA, CRIEI UMA ROTA ASYNC PARA A SINCRONIZAÇÃO
-    \item \textbf{Fluxo em Modo Online e Reconexão:} Ao identificar o restabelecimento de uma conexão ativa e estável, a aplicação móvel inicia o esvaziamento da fila de maneira assíncrona. As operações pendentes são transmitidas sequencialmente à camada de suporte por meio de requisições HTTP utilizando os verbos adequados (\textit{POST} para criações, \textit{PUT} ou \textit{PATCH} para atualizações e \textit{DELETE} para exclusões), direcionadas aos respectivos \textit{endpoints} da API.
+    \item \textbf{Fluxo em Modo Offline:} Caso o dispositivo detecte a ausência de conexão à internet ou as requisições HTTP retornem falha por indisponibilidade de rede, as operações de CRUD são desviadas e executadas estritamente no \textit{WatermelonDB}. As deleções, atualizações e exclusões são realizadas localmente e são sincronizadas em apenas uma rota, que recebe todas as alterações feitas localmente e os dados vindos são os da última modificação feita.
+    \item \textbf{Fluxo em Modo Online e Reconexão:} Ao identificar o restabelecimento de uma conexão ativa e estável, a aplicação móvel inicia a publicação das informações de maneira assíncrona. As operações pendentes são publicadas na rota única de sincronização da API.
 \end{itemize}
 
 \begin{figure}[H] 

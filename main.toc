@@ -7,7 +7,7 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{11}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivação}{12}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objetivos}{12}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Objetivos}{13}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{13}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{13}{subsection.1.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -19,6 +19,7 @@
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Trabalhos Relacionados}}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Prontuário Eletrônico Veterinário com Geolocalização (Pimazzoni, 2023)}{18}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Plataforma SimplesVet (Solução Comercial)}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Tabela de Comparação entre os Trabalhos Relacionados}{19}{section.3.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Metodologia}}{20}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Caracterização da Pesquisa}{20}{section.4.1}%
@@ -42,10 +43,10 @@
 \contentsline {section}{\numberline {6.2}Trabalhos Futuros}{42}{section.6.2}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{44}{section*.26}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{44}{section*.27}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{GLOSSÁRIO}{47}{chapter*.28}%
-\contentsline {chapter}{AP\^ENDICES}{48}{chapter*.28}%
+\contentsline {chapter}{GLOSSÁRIO}{47}{chapter*.29}%
+\contentsline {chapter}{AP\^ENDICES}{48}{chapter*.29}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \renewcommand *{\cftappendixname }{\normalfont AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
