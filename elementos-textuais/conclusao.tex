@@ -2,12 +2,11 @@
 \label{cap:conclusao}
 O presente trabalho de conclusão de curso buscou estudar as ferramentes existentes que atuam de forma offline, como também o mundo do trabalho dos veterinários domiciliares, com o objetivo de criar a aplicação roadvet. Se utilizando do paradigma \textit{offline-first } foi possível se desvencilhar dos problemas de conexão que impediam atividades de registro, consulta e gerenciamento de prontuários clínicos, tutores e pacientes.
 
-Com a implementação da camada de cliente em React Native, a persistência local com o WatermelonDB, a interface de programação de aplicações desenvolvida em python, juntamente com o Django Rest Framework (DRF) e o banco de dados relacional SQLite, o sistema demonstrou ser viável e eficaz. Os teste de viabilidade comprovam que a aplicação desenvolvida é capaz de performar em situações em que o dispositivo não possui conexão de rede, como também é capaz de sincronizar os dados de forma assíncrona assim que a conexão é reestabelecida. Dessa forma o trabalho contribui para a melhoria da qualidade e segurança dos serviços veterinários volantes, reduzindo a perda de dados clínicos relevantes, como também fornecendo um suporte robusto para a atuação diária desses profissionais.
-
+Com a implementação da camada de cliente em React Native, a persistência local com o \textit{WatermelonDB}, a interface de programação de aplicações desenvolvida em python, juntamente com o textit{Django Rest Framework} (DRF) e o banco de dados relacional \textit{SQLite}, o sistema demonstrou ser viável e eficaz. Os teste de viabilidade comprovam que a aplicação desenvolvida é capaz de performar em situações em que o dispositivo não possui conexão de rede, como também é capaz de sincronizar os dados de forma assíncrona assim que a conexão é reestabelecida. Dessa forma o trabalho contribui para a melhoria da qualidade e segurança dos serviços veterinários volantes, reduzindo a perda de dados clínicos relevantes, como também fornecendo um suporte robusto para a atuação diária desses profissionais.
 
 \section{Dificuldades Encontradas}
-%MODIFICAR A ESFERA HUMANA, BUSCAR OUTRA DIFICULDADE
- Durante o desenvolvimento do aplicativo, foram enfrentados desafios tanto na esfera técnica quanto no processo de elicitação de requisitos e regras de negócio. No que tange às dificuldades tecnológicas, vale
+%REVISAR SEÇÃO
+Durante o desenvolvimento do aplicativo, foram enfrentados desafios tanto na esfera técnica quanto no processo de elicitação de requisitos e regras de negócio. No que tange às dificuldades tecnológicas, vale
 destacar a decisão de não se utilizar de APIs externas para facilitar os processos presentes no aplicativo, como cadastro e filtro das entidades. Não foi possível encontrar uma forma eficiente de consumir esses dados disponibilizados por essas aplicações em situações de falta de conectividade, já que o consumo desses serviços acontece por intermédio da internet. Os dados fornecidos eram, por exemplo nomes de raças de felinos e caninos e vacinas mais utilizadas no meio clínico, tais dados facilitariam muito o cadastro de prontuários e pets no aplicativo, entretanto a decisão final tomada foi o cadastro manual desses dados na camada do cliente, possibilitando assim o uso desses registros sem o consumo de serviços externos. Outra dificuldade encontrada na esfera tecnológica foi 
 
 No que se refere à esfera da elicitação de requisitos, a dificuldade encontrada se deteve no obstáculo de conseguir listar juntamente aos profissionais da veterinária volante, quais seriam as maiores necessidades deles que deveriam ser implementadas no aplicativo, pois muitas dos problemas levantados eram potenciais ferramentes do aplicativo e para os desenvolvedores, por terem que adaptar todas elas para o ambiente sem conexão. Apesar de ter sido uma dificuldade enfrentada, foi possível filtrar o que mais seria necessário para a atuação do profissional em questão no dia a dia e implementar no roadvet.
@@ -32,4 +31,3 @@ Apesar de a aplicação desenvolvida cumprir de forma positiva os objetivos prop
      
 \end{itemize}
 
-%CRIAR SEÇÃO DE DIFICULDADES ENCONTRADAS
