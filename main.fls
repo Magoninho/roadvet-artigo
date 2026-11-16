@@ -1,9 +1,9 @@
-PWD /home/jpmendes/Projects/RoadVet/roadvet-artigo
+PWD /home/jfribeiro/Downloads/TCC_Unifor_corrigido
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT main.tex
+INPUT /home/jfribeiro/Downloads/TCC_Unifor_corrigido/main.tex
 OUTPUT main.log
 INPUT ./lib/preambulo.tex
 INPUT ./lib/preambulo.tex
