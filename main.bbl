@@ -7,29 +7,40 @@
 
 \bibitem[Brasil 2018]{lgpd2018}
 \abntrefinfo{Brasil}{BRASIL}{2018}
-{BRASIL. \textbf{Lei nº 13.709, de 14 de agosto de 2018: Lei Geral de Proteção de Dados Pessoais (LGPD)}. 2018.
-Dispon{\'\i}vel em: \url{https://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2018/lei/l13709.htm}. Acesso em: 6 nov. 2026.}
+{BRASIL. \textbf{Lei nº 13.709, de 14 de agosto de 2018: Lei Geral de
+  Proteção de Dados Pessoais (LGPD)}. 2018.
+Dispon{\'\i}vel em:
+  \url{https://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2018/lei/l13709.htm}.
+  Acesso em: 6 nov. 2026.}
 
 \bibitem[Brasil 2020]{leisansao2020}
 \abntrefinfo{Brasil}{BRASIL}{2020}
 {BRASIL. \textbf{Lei nº 14.064, de 29 de setembro de 2020}. 2020.
-Dispon{\'\i}vel em: \url{https://www.planalto.gov.br/ccivil\_03/\_ato2019-2022/2020/lei/l14064.htm}. Acesso em: 6 nov. 2026.}
+Dispon{\'\i}vel em:
+  \url{https://www.planalto.gov.br/ccivil\_03/\_ato2019-2022/2020/lei/l14064.htm}.
+  Acesso em: 6 nov. 2026.}
 
 \bibitem[Django REST framework {[2026]}]{drf}
 \abntrefinfo{Django REST framework}{DJANGO REST FRAMEWORK}{{[2026]}}
 {DJANGO REST FRAMEWORK. \textbf{Django REST framework}. {[2026]}.
-Dispon{\'\i}vel em: \url{https://www.django-rest-framework.org/}. Acesso em: 6 nov. 2026.}
+Dispon{\'\i}vel em: \url{https://www.django-rest-framework.org/}. Acesso em: 6
+  nov. 2026.}
 
 \bibitem[Fielding 2000]{fielding2000}
 \abntrefinfo{Fielding}{FIELDING}{2000}
 {FIELDING, R.~T.
-\textbf{Architectural Styles and the Design of Network-based Software Architectures}.
+\textbf{Architectural Styles and the Design of Network-based Software
+  Architectures}.
 Tese (Doutorado) --- University of California, Irvine, Irvine, 2000.
-Dispon{\'\i}vel em: \url{https://ics.uci.edu/~fielding/pubs/dissertation/top.htm}. Acesso em: 6 nov. 2026.}
+Dispon{\'\i}vel em:
+  \url{https://ics.uci.edu/~fielding/pubs/dissertation/top.htm}. Acesso em: 6
+  nov. 2026.}
 
 \bibitem[Kleppmann 2017]{kleppmann2017}
 \abntrefinfo{Kleppmann}{KLEPPMANN}{2017}
-{KLEPPMANN, M. \textbf{Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems}. Sebastopol: O'Reilly Media, 2017.}
+{KLEPPMANN, M. \textbf{Designing Data-Intensive Applications: The Big Ideas
+  Behind Reliable, Scalable, and Maintainable Systems}. Sebastopol: O'Reilly
+  Media, 2017.}
 
 \bibitem[Meta Platforms {[2026]}]{reactnative}
 \abntrefinfo{Meta Platforms}{META PLATFORMS}{{[2026]}}
@@ -38,29 +49,38 @@ Dispon{\'\i}vel em: \url{https://reactnative.dev/}. Acesso em: 6 nov. 2026.}
 
 \bibitem[Nibblett, Ketzis e Grigg 2015]{nibblett2015}
 \abntrefinfo{Nibblett, Ketzis e Grigg}{NIBBLETT; KETZIS; GRIGG}{2015}
-{NIBBLETT, B.~M.; KETZIS, J.~K.; GRIGG, E.~K. Comparison of stress exhibited by cats examined in a clinic versus a home setting.
+{NIBBLETT, B.~M.; KETZIS, J.~K.; GRIGG, E.~K. Comparison of stress exhibited by
+  cats examined in a clinic versus a home setting.
 \textbf{Applied Animal Behaviour Science}, v.~173, p. 68--75, 2015.}
 
 \bibitem[Nozbe {[2026]}]{watermelondb}
 \abntrefinfo{Nozbe}{NOZBE}{{[2026]}}
 {NOZBE. \textbf{WatermelonDB: Synchronization}. {[2026]}.
-Dispon{\'\i}vel em: \url{https://watermelondb.dev/docs/Sync/Intro}. Acesso em: 6 nov. 2026.}
+Dispon{\'\i}vel em: \url{https://watermelondb.dev/docs/Sync/Intro}. Acesso em:
+  6 nov. 2026.}
 
 \bibitem[Pimazzoni 2023]{pimazzoni2023}
 \abntrefinfo{Pimazzoni}{PIMAZZONI}{2023}
 {PIMAZZONI, R.~C.
-\textbf{Desenvolvimento de sistema de informações em saúde veterinária com prontuário eletrônico e recursos de geolocalização}.
-Disserta\c{c}\~{a}o (Mestrado em Gestão e Inovação na Indústria Animal) --- Faculdade de Zootecnia e Engenharia de Alimentos, Universidade de São Paulo, Pirassununga, 2023.
-Dispon{\'\i}vel em: \url{https://teses.usp.br/teses/disponiveis/74/74134/tde-16022024-170716/pt-br.html}. Acesso em: 6 nov. 2026.}
+\textbf{Desenvolvimento de sistema de informações em saúde veterinária com
+  prontuário eletrônico e recursos de geolocalização}.
+Disserta\c{c}\~{a}o (Mestrado em Gestão e Inovação na Indústria Animal) ---
+  Faculdade de Zootecnia e Engenharia de Alimentos, Universidade de São Paulo,
+  Pirassununga, 2023.
+Dispon{\'\i}vel em:
+  \url{https://teses.usp.br/teses/disponiveis/74/74134/tde-16022024-170716/pt-br.html}.
+  Acesso em: 6 nov. 2026.}
 
 \bibitem[SimplesVet {[2026]}]{simplesvet}
 \abntrefinfo{SimplesVet}{SIMPLESVET}{{[2026]}}
-{SIMPLESVET. \textbf{Sistema de gestão para clínicas veterinárias}. {[2026]}.
+{SIMPLESVET. \textbf{Sistema de gestão para clínicas veterinárias}.
+  {[2026]}.
 Dispon{\'\i}vel em: \url{https://www.simples.vet}. Acesso em: 24 maio 2026.}
 
 \bibitem[SQLite {[2026]}]{sqlite}
 \abntrefinfo{SQLite}{SQLITE}{{[2026]}}
 {SQLITE. \textbf{SQLite Documentation}. {[2026]}.
-Dispon{\'\i}vel em: \url{https://sqlite.org/docs.html}. Acesso em: 6 nov. 2026.}
+Dispon{\'\i}vel em: \url{https://sqlite.org/docs.html}. Acesso em: 6 nov.
+  2026.}
 
 \end{thebibliography}

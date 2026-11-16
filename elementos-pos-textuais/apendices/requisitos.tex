@@ -30,7 +30,7 @@ Este apêndice apresenta de forma detalhada os Requisitos Funcionais (RF) e Não
     %REVISAR REQUISITO
     \item[RF19] \textbf{Disponibilizar administração interna:} O sistema deve disponibilizar uma interface administrativa para consulta e manutenção dos modelos registrados, conforme as permissões administrativas do usuário.
     \item[RF20] \textbf{Sincronização Assíncrona:} O sistema deve detectar automaticamente o restabelecimento da conexão Wi-Fi ou Dados Móveis e realizar o upload dos dados pendentes sem interromper a navegação do usuário.
-    \item[RF21] \textbf{Painel de Status de Sincronização:} O sistema deve exibir uma lista ou indicador visual, como um ícone de "nuvem com check" ou "relógio" informando ao veterinário quais registros já estão seguros na nuvem.
+    \item[RF21] \textbf{Indicador de Status de Sincronização:} O sistema deve exibir um indicador visual do estado da conexão e da sincronização (\textit{online}, sincronizando ou \textit{offline}), informando ao veterinário se as alterações locais já foram enviadas ao servidor.
     \item[RF22] \textbf{Encerrar sessão:} O sistema deve permitir sair da conta, removendo os tokens e a referência da sessão ativa.
     \item[RF23] \textbf{Restaurar sessão:} O sistema deve restaurar a sessão do veterinário ao reabrir o aplicativo, presente por identificação local.
     \item[RF24] \textbf{Operar sem conexão:} O sistema deve permitir consultar e manter tutores, animais e prontuários localmente sem conexão, sincronizando posteriormente.
@@ -59,10 +59,9 @@ Este apêndice apresenta de forma detalhada os Requisitos Funcionais (RF) e Não
     \item[RNF08] \textbf{Compatibilidade com o contrato de sincronização:} A API deve utilizar identificadores textuais compatíveis com os gerados pelo cliente, marcadores temporais em milissegundos e conjuntos de alterações \textit{created}, \textit{updated} e \textit{deleted}.
     \item[RNF09] \textbf{Organização modular:} O código deve separar as responsabilidades de usuários, tutores, animais, prontuários e sincronização em módulos próprios.
     \item[RNF10] \textbf{Persistência local:} O aplicativo deve preservar registros entre execuções e permitir acesso offline.
-    \item[RNF11] \textbf{Proteção das credenciais locais:} Os tokens devem receber proteção adequada à plataforma, e a senha local deve usar derivação resistente a tentativas de descoberta.
+    \item[RNF11] \textbf{Proteção das credenciais locais:} Os tokens devem ser armazenados no cofre seguro da plataforma (\textit{Keychain}/\textit{Keystore}), e a senha local deve ser armazenada apenas como \textit{hash} SHA-256 com \textit{salt} aleatório.
     \item[RNF12] \textbf{Isolamento local entre contas:} Dados, alterações pendentes e marcos de sincronização devem permanecer isolados por veterinário, inclusive após troca de conta.
     \item[RNF13] \textbf{Recuperação de falhas de comunicação:} O aplicativo deve repetir operações pendentes após reconexão ou falha temporária por meio de tentativas automáticas.
     \item[RNF14] \textbf{Fidelidade do estado de sincronização:} O aplicativo deve distinguir dados locais salvos, metadados sincronizados, arquivos pendentes e falhas (Parcial: erros são apresentados como “sincronizando”, e o sucesso da sincronização não garante que todos os arquivos foram enviados).
     \item[RNF15] \textbf{Integridade das operações locais:} Operações compostas devem evitar gravações parciais. A exclusão em cascata usa lote único, prontuário e anexos são criados em operações separadas.
-    \item[RNF16] \textbf{Acessibilidade:} A interface deve atender critérios definidos de leitura por tecnologias assistivas, navegação, contraste e ampliação de texto.
 \end{description}
