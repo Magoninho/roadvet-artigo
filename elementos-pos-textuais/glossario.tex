@@ -3,10 +3,6 @@
     description={levantamento do histórico do paciente, de suas condições de saúde e dos sinais relatados pelo tutor, utilizado para orientar a avaliação clínica}
 }
 
-\newglossaryentry{armazenamento-chave-valor}{
-    name={Armazenamento chave-valor},
-    description={forma de armazenamento na qual cada valor é associado a uma chave que permite sua identificação e recuperação}
-}
 
 \newglossaryentry{atomicidade}{
     name={Atomicidade},
@@ -48,20 +44,12 @@
     description={situação em que alterações concorrentes de um mesmo registro precisam ser conciliadas para determinar o estado dos dados}
 }
 
-\newglossaryentry{endpoint}{
-    name={Endpoint},
-    description={ponto de acesso de uma interface de programação de aplicações, identificado por um endereço ao qual são dirigidas requisições}
-}
 
 \newglossaryentry{exclusao-logica}{
     name={Exclusão lógica},
     description={procedimento que marca um registro como excluído sem removê-lo fisicamente de imediato do armazenamento}
 }
 
-\newglossaryentry{fila-sincronizacao}{
-    name={Fila de sincronização},
-    description={estrutura que mantém operações pendentes para posterior transmissão e processamento durante a sincronização de dados}
-}
 
 \newglossaryentry{front-end}{
     name={Front-end},
@@ -70,7 +58,8 @@
 
 \newglossaryentry{hash}{
     name={Hash},
-    description={resultado de uma função que transforma dados de entrada em um valor de tamanho definido; no armazenamento de senhas, devem ser empregados mecanismos específicos de derivação com proteção contra tentativas de descoberta}
+    %CORRIGIDO
+    description={resultado de uma função que transforma dados de entrada em um valor de tamanho fixo, utilizado no armazenamento de senhas para que o valor original não seja guardado}
 }
 
 \newglossaryentry{interoperabilidade}{
@@ -80,7 +69,8 @@
 
 \newglossaryentry{last-write-wins}{
     name={Last-Write-Wins},
-    description={estratégia de resolução de conflitos que seleciona a versão considerada mais recente de um dado com base na ordenação das escritas, geralmente determinada por marcas temporais}
+    %CORRIGIDO
+    description={estratégia de resolução de conflitos que mantém a versão gravada por último de um dado, descartando as versões anteriores}
 }
 
 \newglossaryentry{metadados}{
@@ -103,10 +93,6 @@
     description={conjunto organizado de registros referentes à identificação do paciente animal, ao histórico de saúde e aos atendimentos, incluindo avaliações, condutas e documentos clínicos}
 }
 
-\newglossaryentry{serializacao}{
-    name={Serialização},
-    description={processo de conversão de dados estruturados em uma representação adequada ao armazenamento ou à transmissão, como texto no formato JSON}
-}
 
 \newglossaryentry{sincronizacao-assincrona}{
     name={Sincronização assíncrona},
@@ -118,10 +104,6 @@
     description={processo que transmite as alterações identificadas desde um marco de sincronização anterior, em vez de reenviar integralmente todos os registros}
 }
 
-\newglossaryentry{timestamp}{
-    name={Timestamp},
-    description={marca temporal que representa um instante e pode ser utilizada para registrar alterações e comparar versões de dados}
-}
 
 \newglossaryentry{token-autenticacao}{
     name={Token de autenticação},

@@ -5,6 +5,23 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Alpi \textit{et al.} 2011]{alpi2011}
+\abntrefinfo{Alpi \textit{et al.}}{ALPI \textit{et al.}}{2011}
+{ALPI, K.~M.; BURNETT, H.~A.; BRYANT, S.~J.; ANDERSON, K.~M. Connecting
+  knowledge resources to the veterinary electronic health record: opportunities
+  for learning at point of care.
+\textbf{Journal of Veterinary Medical Education}, v.~38, n.~2, p. 110--122,
+  2011.}
+
+\bibitem[Arbex 2025]{arbex2025}
+\abntrefinfo{Arbex}{ARBEX}{2025}
+{ARBEX, J. \textbf{Brasil ganha 8 mil novos estabelecimentos pet em 2024}.
+  2025. EloVetNet.
+26 maio 2025.
+Dispon{\'\i}vel em:
+  \url{https://elovetnet.com.br/brasil-ganha-8-mil-novos-estabelecimentos-pet-em-2024/}.
+  Acesso em: 18 nov. 2026.}
+
 \bibitem[Brasil 2018]{lgpd2018}
 \abntrefinfo{Brasil}{BRASIL}{2018}
 {BRASIL. \textbf{Lei nº 13.709, de 14 de agosto de 2018: Lei Geral de
@@ -35,6 +52,11 @@ Tese (Doutorado) --- University of California, Irvine, Irvine, 2000.
 Dispon{\'\i}vel em:
   \url{https://ics.uci.edu/~fielding/pubs/dissertation/top.htm}. Acesso em: 6
   nov. 2026.}
+
+\bibitem[Gil 2022]{gil2022}
+\abntrefinfo{Gil}{GIL}{2022}
+{GIL, A.~C. \textbf{Como elaborar projetos de pesquisa}. 7. ed. Barueri: Atlas,
+  2022.}
 
 \bibitem[Kleppmann 2017]{kleppmann2017}
 \abntrefinfo{Kleppmann}{KLEPPMANN}{2017}
@@ -71,6 +93,23 @@ Dispon{\'\i}vel em:
   \url{https://teses.usp.br/teses/disponiveis/74/74134/tde-16022024-170716/pt-br.html}.
   Acesso em: 6 nov. 2026.}
 
+\bibitem[Pollari \textit{et al.} 1996]{pollari1996}
+\abntrefinfo{Pollari \textit{et al.}}{POLLARI \textit{et al.}}{1996}
+{POLLARI, F.~L.; BONNETT, B.~N.; BAMSEY, S.~C.; MEEK, A.~H.; ALLEN, D.~G.
+  Postoperative complications of elective surgeries in dogs and cats determined
+  by examining electronic and paper medical records.
+\textbf{Journal of the American Veterinary Medical Association}, v.~208, n.~11,
+  p. 1882--1886, 1996.}
+
+\bibitem[S{\~a}o Paulo 2024]{saopaulo2024}
+\abntrefinfo{S{\~a}o Paulo}{S{\~A}O PAULO}{2024}
+{S{\~A}O PAULO. \textbf{Lei nº 17.972, de 10 de julho de 2024: dispõe sobre a
+  proteção, a saúde e o bem-estar na criação e na comercialização de
+  cães e gatos no Estado de São Paulo}. 2024.
+Dispon{\'\i}vel em:
+  \url{https://www.al.sp.gov.br/repositorio/legislacao/lei/2024/original-lei-17972-10.07.2024.html}.
+  Acesso em: 18 nov. 2026.}
+
 \bibitem[SimplesVet {[2026]}]{simplesvet}
 \abntrefinfo{SimplesVet}{SIMPLESVET}{{[2026]}}
 {SIMPLESVET. \textbf{Sistema de gestão para clínicas veterinárias}.
@@ -82,5 +121,14 @@ Dispon{\'\i}vel em: \url{https://www.simples.vet}. Acesso em: 24 maio 2026.}
 {SQLITE. \textbf{SQLite Documentation}. {[2026]}.
 Dispon{\'\i}vel em: \url{https://sqlite.org/docs.html}. Acesso em: 6 nov.
   2026.}
+
+\bibitem[Vidal 2026]{sebrae2026}
+\abntrefinfo{Vidal}{VIDAL}{2026}
+{VIDAL, C. \textbf{Nos últimos dois anos, abertura de pequenos negócios do
+  mercado pet cresceu 22\% no país}. 2026. Agência Sebrae de Notícias.
+6 fev. 2026.
+Dispon{\'\i}vel em:
+  \url{https://agenciasebrae.com.br/cultura-empreendedora/nos-ultimos-dois-anos-abertura-pequenos-negocios-do-mercado-pet-cresceu-22-no-pais/}.
+  Acesso em: 18 nov. 2026.}
 
 \end{thebibliography}

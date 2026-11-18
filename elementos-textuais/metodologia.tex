@@ -3,17 +3,19 @@
 
 %CARACTERIZTAR TODO O PROCESSO DE DESENVOLVIEMNTO DO TRABALHO, USANDO OS VERBOS NO FUTURO, DE FORMA QUE UMA PESSOA ENTENDA TODO O PROCESSOS DESTRINCHADO DE DESENVOLVIMENTO DO PROJETO.
 
-A metodologia adotada para este trabalho fundamenta-se na pesquisa aplicada e no desenvolvimento experimental. O processo foi estruturado de forma a abranger a discussão com profissionais da área veterinária, o levantamento de requisitos, a definição da arquitetura do sistema, o desenvolvimento do projeto utilizando \textit{React Native} e \textit{Django Rest Framework} e, por fim, a realização de testes de sincronização em cenários de intermitência de rede.
+%CORRIGIDO
+A metodologia adotada para este trabalho fundamenta-se na pesquisa aplicada e no desenvolvimento experimental. O processo foi estruturado de forma a abranger a discussão com profissionais da área veterinária, o levantamento de requisitos, a definição da arquitetura do sistema, o desenvolvimento do projeto utilizando \textit{React Native} e \textit{Django REST Framework} e, por fim, a realização de testes de sincronização em cenários de intermitência de rede.
 
-%A PESQUISA É APENAS QUANTITATIVA! CORRIGIR ISSO
 \section{Caracterização da Pesquisa}
 
-O presente trabalho científico classifica-se como uma pesquisa aplicada. De acordo com Gil (2022), a pesquisa aplicada caracteriza-se pelo interesse prático, estando voltada para a aquisição de conhecimentos com vistas à aplicação direta e à solução de problemas específicos da realidade. No contexto desta pesquisa, o uso dessa abordagem é justificado pelo desenvolvimento de uma aplicação móvel com o objetivo de permitir que o antedimento em ambientes veterinário-domiciliares não seja interrompido pela perca de conexão com a internet.
+%CORRIGIDO
+O presente trabalho científico classifica-se como uma pesquisa aplicada. De acordo com \citeonline{gil2022}, a pesquisa aplicada caracteriza-se pelo interesse prático, estando voltada para a aquisição de conhecimentos com vistas à aplicação direta e à solução de problemas específicos da realidade. No contexto desta pesquisa, o uso dessa abordagem é justificado pelo desenvolvimento de uma aplicação móvel com o objetivo de permitir que o atendimento em ambientes veterinário-domiciliares não seja interrompido pela perda de conexão com a internet.
 
-Os objetivos desta pesquisa são caracterizados como exploratórios e descritivos. Apresenta caráter exploratório pois se aprofunda nos desafios de sincronização em cenários de baixa conectividade no atendimento domiciliar, como também se baseia em um problema pouco conhecido na sociedade. Adicionalmente, manifesta-se como descritiva ao detalhar o comportamento e a eficiência das tecnologias utilizadas, com foco no \textit{framework} \textit{Django Rest Framework} e na biblioteca \textit{React Native}, demonstrando como chegar ao resultado final, desde o levantamento de requisitos até a aplicação final.
+%CORRIGIDO
+Os objetivos desta pesquisa são caracterizados como exploratórios e descritivos. Apresenta caráter exploratório pois se aprofunda nos desafios de sincronização em cenários de baixa conectividade no atendimento domiciliar, como também se baseia em um problema pouco conhecido na sociedade. Adicionalmente, manifesta-se como descritiva ao detalhar o comportamento e a eficiência das tecnologias utilizadas, com foco no \textit{framework} \textit{Django REST Framework} e na biblioteca \textit{React Native}, demonstrando como chegar ao resultado final, desde o levantamento de requisitos até a aplicação final.
 
-A abordagem do seguinte trabalho se caracteriza como quantitativa, se revela dessa forma quando se preocupa com a sincronização dos dados e com a persistência dos deles, tanto na camada de suporte como na camada de cliente.
-%A ABORDAGEM É NA VERDADE QUANTITATIVA
+%CORRIGIDO
+A abordagem do presente trabalho caracteriza-se como qualitativa, uma vez que a avaliação do sistema se baseia na verificação do comportamento da aplicação quanto à persistência e à sincronização dos dados, tanto na camada de suporte quanto na camada de cliente, em cenários simulados de conectividade.
 
 A metodologia adotada nesta pesquisa fundamenta-se no método da engenharia, alinhado à \textit{Design Science Research} (DSR), visto que o trabalho busca solucionar um problema prático vivenciado por médicos veterinários que atuam em domicílio. O percurso metodológico seguiu o ciclo heurístico composto pelas etapas de: identificação das principais necessidades dos veterinários domiciliares, mapeamento dos requisitos de persistência local, projeto da arquitetura \textit{offline-first}, implementação do protótipo funcional e avaliação da eficácia do sistema sob condições simuladas de falta de conectividade.
     
@@ -26,11 +28,14 @@ Para o desenvolvimento deste trabalho, o primeiro passo consistiu em contatar pr
 
 \section{Levantamento de Requisitos}
 %TRAZER UMA LISTA DOS REQUISITOS DO NOTION
-Após a primeira etapa de reconhecimento dos principais problemas que assolam os veterinários domiciliares, foram definidos os requisitos da aplicação, divididos em funcionais e não funcionais, essas definições foram primordiais para promover uma maior organização de prioridades no desenvolvimento do aplicativo. Requisitos funcionais são as funcionalidades indispensáveis da aplicação, aquelas que não podem deixar de ser implementadas, pois são básicas para a resolução do problema que é proposto a ser resolvido pelo sistema, já os requisitos não funcionais se caracterizam-se como os atributos de qualidade, restrições e critérios técnicos que moldam a forma como o sistema opera, abrangendo aspectos de segurança, desempenho e arquitetura.
+%CORRIGIDO
+Após a primeira etapa de reconhecimento dos principais problemas que assolam os veterinários domiciliares, foram definidos os requisitos da aplicação, divididos em funcionais e não funcionais, essas definições foram primordiais para promover uma maior organização de prioridades no desenvolvimento do aplicativo. Requisitos funcionais são as funcionalidades indispensáveis da aplicação, aquelas que não podem deixar de ser implementadas, pois são básicas para a resolução do problema que é proposto a ser resolvido pelo sistema, já os requisitos não funcionais caracterizam-se como os atributos de qualidade, restrições e critérios técnicos que moldam a forma como o sistema opera, abrangendo aspectos de segurança, desempenho e arquitetura.
 
-Para anotar os requisitos do presente projeto, foi utilizada a ferramente\textit{ Notion}, que funciona como um organizador de ideias e anotações digital, na plataforma citada, foi definido um módulo que classificou os requisitos como funcionais e não funcionais, como também classificou sua prioridade de aplicação, divididos em média, baixa e alta prioridade, influenciando diretamente nas decisões finais do aplicativo conforme era posto em prática a digitação do código.
+%CORRIGIDO
+Para anotar os requisitos do presente projeto, foi utilizada a ferramenta \textit{Notion}, que funciona como um organizador de ideias e anotações digital, na plataforma citada, foi definido um módulo que classificou os requisitos como funcionais e não funcionais, como também classificou sua prioridade de aplicação, divididos em média, baixa e alta prioridade, influenciando diretamente nas decisões finais do aplicativo conforme era posto em prática a digitação do código.
 
-A fim de ilustrar a estrutura adotada, estão representados abaixo alguns requisitos que se detacam como de maior importância para o sistema. A lista completa de todos os requisitos encontra-se disposto no Apêndice ~\ref{ap:requisitos} deste trabalho.
+%CORRIGIDO
+A fim de ilustrar a estrutura adotada, estão representados abaixo alguns requisitos que se destacam como de maior importância para o sistema. A lista completa de todos os requisitos encontra-se disposta no Apêndice ~\ref{ap:requisitos} deste trabalho.
 
 %DEIXAR 5 REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS E COLOCAR O RESTO PARA O APÊNDICE
 \subsection{Requisitos Funcionais (RF) (Amostra)}
@@ -64,6 +69,7 @@ A fim de ilustrar a estrutura adotada, estão representados abaixo alguns requis
 Após o estudo dos diversos tipos de aplicações móveis, foram definidas as arquiteturas para as diferentes camadas do sistema. Inicialmente, estruturou-se a arquitetura de banco de dados, que reúne o modelo de cada entidade envolvida na lógica de negócio, especificando os tipos de campos, como chaves primárias e tipos primitivos de dados e as respectivas relações entre as tabelas. Em seguida, definiu-se a arquitetura de front-end, responsável pela construção da interface do usuário e da persistência de dados local. Por fim, estruturou-se a camada do servidor, que centraliza a lógica de negócio e o gerenciamento das requisições globais.
 
 \section{Procedimentos de Validação e Testes}
-Para validar o funcionamento da aplicação, foi projeto um ambiente de testes controlado, que buscou se aproximar de situações reais vividas pelos profissionais da área veterinária domiciliar. Durante a fase de testes, as camadas de cliente e de suporte foram testadas individualmente e em conjunto, em situações com e sem presença de internet.
+%CORRIGIDO
+Para validar o funcionamento da aplicação, foi projetado um ambiente de testes controlado, que buscou se aproximar de situações reais vividas pelos profissionais da área veterinária domiciliar. Durante a fase de testes, as camadas de cliente e de suporte foram testadas individualmente e em conjunto, em situações com e sem presença de internet.
 
 Quanto ao procedimento de teste, a aplicação foi executada em ambiente emulado, inicializando-se a API e a interface móvel (\textit{front-end}) de forma simultânea. Em seguida, foram efetuados registros de dados fictícios — primeiramente sob conectividade plena e, em seguida, com a interrupção intencional da rede —, a fim de validar a persistência local no modo \textit{offline}. Por fim, a conexão foi restabelecida para verificar a correta sincronização assíncrona dos dados com o servidor central.

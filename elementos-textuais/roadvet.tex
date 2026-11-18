@@ -5,9 +5,8 @@ Este capítulo apresenta a contribuição principal deste trabalho, a aplicaçã
 \section{Definição da Arquitetura do Sistema}
 
 %CORRIGIDO
-A arquitetura do sistema foi projetada segundo o modelo Cliente-Servidor, utilizando o padrão de \textit{APIs REST.} Essa abordagem justifica-se pelo fato de possibilitar o desacoplamento entre interface do usuário e regras de negócio, que no contexto do ambiente veterinário domiciliar é fundamental. Dessa maneira, o modelo Cliente-Servidor, combinado ao paradigma \textit{offline-first}, fornece independência ao cliente, de forma que os dados são processados localmente sem a necessidade da conexão com a internet. Assim, quando a comunicação é restabelecida com o servidor, a \textit{API REST} garante a comunicação entre ambos e salva os dados pendentes no banco de dados, conforme ilustrado na Figura~\ref{fig:arquitetura}.
+A arquitetura do sistema foi projetada segundo o modelo Cliente-Servidor, utilizando o padrão de \textit{APIs REST}. Essa abordagem justifica-se pelo fato de possibilitar o desacoplamento entre interface do usuário e regras de negócio, que no contexto do ambiente veterinário domiciliar é fundamental. Dessa maneira, o modelo Cliente-Servidor, combinado ao paradigma \textit{offline-first}, fornece independência ao cliente, de forma que os dados são processados localmente sem a necessidade da conexão com a internet. Assim, quando a comunicação é restabelecida com o servidor, a \textit{API REST} garante a comunicação entre ambos e salva os dados pendentes no banco de dados, conforme ilustrado na Figura~\ref{fig:arquitetura}.
 
-%MODELAR A ARQUITETURA DO SISTEMA
 
 \begin{figure}[H] 
     \centering 
@@ -20,19 +19,19 @@ A arquitetura do sistema foi projetada segundo o modelo Cliente-Servidor, utiliz
 
 
 \section{Visão Geral}
-% <<< REVISAR O TEXTO, POIS CITA QUE O APP TAMBÉM ATENDE PESSOAS SEM CRMV >>>
 %EXPLICAR PARA QUEM É A APLICAÇÃO, MOSTRAR O FLUXO DETALHADO
 %FAZER RELAÇÃO DAS TELAS COM OS REQUISITOS CITADOS
 %NÃO DEIXAR IMAGENS UMA ABAIXO DA OUTRA SEM TEXTO
 O \textit{RoadVet} foi concebido para atender médicos veterinários que realizam atendimentos domiciliares e de campo em regiões onde a conectividade à internet é limitada ou inexistente. A aplicação destina-se primordialmente a profissionais autônomos que demandam mobilidade no cuidado à saúde animal, sem prejuízo ao uso por estudantes ou profissionais atuantes em clínicas com acesso estável à rede, visto que o sistema opera de forma transparente em ambas as condições, permitindo o cadastro de tutores, animais e a gestão de prontuários clínicos. No que tange à portabilidade, o artefato foi projetado exclusivamente para plataformas móveis (\textit{mobile}), não sendo prevista sua execução em ambientes de mesa (\textit{desktops} ou \textit{notebooks}).
 
 \subsection{Fluxo Principal do Sistema}
-Em relação ao fluxo do sistema e o primeiro contato do usuário com o RoadVet, o usuário é apresentado à tela de boas-vindas que consiste em dois botões: o primeiro destinado a cadastrar o novo usuário, redirecionando para uma tela de formulário de cadastro, o segundo para os usuários já cadastrados na plataforma, que redireciona para a tela de login. Esta tela é apresentada na Figura~\ref{fig:boasvindas}:
+%CORRIGIDO
+Em relação ao fluxo do sistema e ao primeiro contato do usuário com o RoadVet, o usuário é apresentado à tela de boas-vindas que consiste em dois botões: o primeiro destinado a cadastrar o novo usuário, redirecionando para uma tela de formulário de cadastro, o segundo para os usuários já cadastrados na plataforma, que redireciona para a tela de login. Esta tela é apresentada na Figura~\ref{fig:boasvindas}:
 
-%REVISAR TELAS
 \begin{figure}[H] 
     \centering 
-    \caption{Tela de Boas-Vindas do aplicativo} 
+    %CORRIGIDO
+    \caption{Tela de Boas-Vindas do Aplicativo} 
     \label{fig:boasvindas} 
     \includegraphics[
         width=0.5\linewidth,
@@ -42,7 +41,8 @@ Em relação ao fluxo do sistema e o primeiro contato do usuário com o RoadVet,
     \fonte{Elaboração própria.}
 \end{figure}
 
-Prosseguindo com o fluxo de navegação, o usuário recém-chegado deve selecionar o botão ``Criar conta''. Em seguida, ele é redirecionado para a interface na qual são solicitados os seguintes dados cadastrais: nome completo, registro no Conselho Regional de Medicina Veterinária (CRMV), e-mail, telefone com DDD e senha de acesso. Após o preenchimento e confirmação, os dados do usuário são salvos no banco de dados do servidor. A representação dessa tela é ilustrada na Figura~\ref{fig:cadastro}.
+%CORRIGIDO
+Prosseguindo com o fluxo de navegação, o usuário recém-chegado deve selecionar o botão ``Criar conta''. Em seguida, ele é redirecionado para a interface na qual são solicitados os seguintes dados cadastrais: nome completo, registro no Conselho Regional de Medicina Veterinária (CRMV), e-mail, telefone com DDD e senha de acesso. Após o preenchimento e confirmação, os dados do usuário são salvos no banco de dados do servidor. Para concluir o cadastro, é necessário aceitar os Termos de Uso e a Política de Privacidade, em conformidade com a LGPD, e estar conectado à internet, uma vez que a conta é criada no servidor. A representação dessa tela é ilustrada na Figura~\ref{fig:cadastro}.
 
 \begin{figure}[H] 
     \centering 
@@ -54,7 +54,8 @@ Prosseguindo com o fluxo de navegação, o usuário recém-chegado deve selecion
     \noindent{\small} 
 \end{figure}
 
-No caso de já existir um cadastro para o usuário, basta clicar no botão "Login", na tela de boas vindas, demonstrado na figura ~\ref{fig:boasvindas} e informar o email e senha para seguir os próximos passos, a tela de login está representada na figura ~\ref{fig:login}:
+%CORRIGIDO
+No caso de já existir um cadastro para o usuário, basta clicar no botão ``Login'', na tela de boas-vindas, demonstrado na figura ~\ref{fig:boasvindas} e informar o email e senha para seguir os próximos passos, a tela de login está representada na figura ~\ref{fig:login}:
 
 \begin{figure}[H] 
     \centering 
@@ -100,7 +101,7 @@ Dando continuidade ao fluxo apresentado, a ação seguinte consiste em seleciona
 
 \begin{figure}[H] 
     \centering 
-    \caption{Tela de Criação de Prontuário} 
+    \caption{Tela de Seleção do Paciente para o Novo Prontuário} 
     \includegraphics[width=0.5\linewidth,height=0.45\textheight,keepaspectratio]{TelaProntuarioCriacaoApp.png} 
     \fonte{Elaboração própria.}
     \label{fig:criacaoprontuariolista} 
@@ -114,7 +115,8 @@ Após a definição do paciente, o passo subsequente consiste no preenchimento d
 
 \begin{figure}[H] 
     \centering 
-    \caption{Tela de Criação de Prontuário 1} 
+    %CORRIGIDO
+    \caption{Formulário de Prontuário (Parte 1)} 
     \includegraphics[width=0.5\linewidth,height=0.45\textheight,keepaspectratio]{TelaFormulario1.png} 
     \fonte{Elaboração própria.}
     \label{fig:formularioprontuario1} 
@@ -128,7 +130,8 @@ Ainda no preenchimento do formulário, é preciso também inserir os dados de te
 
 \begin{figure}[H] 
     \centering 
-    \caption{Tela de Criação de Prontuário 2} 
+    %CORRIGIDO
+    \caption{Formulário de Prontuário (Parte 2)} 
     \includegraphics[width=0.5\linewidth,height=0.45\textheight,keepaspectratio]{FormularioProntuario2.png} 
     \fonte{Elaboração própria.}
     \label{fig:formularioprontuario2} 
@@ -136,7 +139,8 @@ Ainda no preenchimento do formulário, é preciso também inserir os dados de te
     \noindent{\small} 
 \end{figure}
 
-No caso do pet ainda não estar cadastrado no sistema, será necessário optar pela opção "Novo pet", logo abaixo da barra de pesquisa na tela, conforme foi apresentado na figura ~\ref{fig:criacaoprontuariolista}, serão preenchidas as informações para criar um novo pet, gato ou cachorro, deve-se fornecer imagem, o tutor responsável, caso já existam tutores cadastrados, nome, data de nascimento, peso em quilogramas, espécie e raça, depois basta clicar em "salvar" para cadastrar o animal ou "cancelar" caso haja algum erro. Segue na figura ~\ref{fig:criacaopet}, o que foi descrito agora.
+%CORRIGIDO
+Caso o pet ainda não esteja cadastrado no sistema, será necessário selecionar a opção ``Novo pet'', logo abaixo da barra de pesquisa, conforme apresentado na Figura~\ref{fig:criacaoprontuariolista}. Em seguida, são preenchidas as informações do novo animal (gato ou cachorro): imagem, tutor responsável, nome, data de nascimento, peso em quilogramas, espécie e raça, sendo obrigatórios apenas o tutor, o nome e a espécie. Depois, basta selecionar ``Salvar'' para cadastrar o animal ou ``Cancelar'' caso haja algum erro, conforme a Figura~\ref{fig:criacaopet}.
 
 %\clearpage
 
@@ -150,13 +154,15 @@ No caso do pet ainda não estar cadastrado no sistema, será necessário optar p
     \noindent{\small} 
 \end{figure}
 
-Caso o tutor associado ao paciente não conste no sistema, o usuário pode selecionar o botão ``Cadastrar novo tutor'', situado abaixo do campo ``Tutor responsável'', conforme ilustrado na Figura~\ref{fig:criacaopet}. Ao acionar essa opção, o sistema direciona o profissional para a interface de cadastro de tutores, na qual devem ser preenchidos os seguintes dados: imagem de perfil, nome completo, CPF, data de nascimento, e-mail, CEP, endereço, número, bairro, complemento, cidade, Unidade Federativa (UF) e dois números de telefone para contato. A representação dessa tela é apresentada na Figura~\ref{fig:criacaotutor}.
+%CORRIGIDO
+Caso o tutor associado ao paciente não conste no sistema, o usuário pode selecionar o botão ``Cadastrar novo tutor'', situado abaixo do campo ``Tutor responsável'', conforme ilustrado na Figura~\ref{fig:criacaopet}. Ao acionar essa opção, o sistema direciona o profissional para a interface de cadastro de tutores, na qual devem ser preenchidos os seguintes dados: imagem de perfil, nome completo, CPF, data de nascimento, e-mail, CEP, endereço, número, bairro, complemento, cidade, Unidade Federativa (UF) e até dois números de telefone para contato, sendo opcionais a imagem, a data de nascimento, o e-mail, o complemento e o segundo telefone. A representação dessa tela é apresentada na Figura~\ref{fig:criacaotutor}.
 
 \clearpage
 
 \begin{figure}[!htbp] 
     \centering 
-    \caption{Tela de Criação do Tutor} 
+    %CORRIGIDO
+    \caption{Tela de Criação de Tutor} 
     \includegraphics[width=0.5\linewidth,height=0.45\textheight,keepaspectratio]{CadastroTutorApp.png} 
     \fonte{Elaboração própria.}
     \label{fig:criacaotutor} 
@@ -164,7 +170,8 @@ Caso o tutor associado ao paciente não conste no sistema, o usuário pode selec
     \noindent{\small} 
 \end{figure}
 
-Se o passo a passo for seguido corretamente como descrito a cima, no final o usuário terá um prontuário profissional em seu aplicativo, totalmente funcional e aberto para edições e exclusão, em modo online e offline.
+%CORRIGIDO
+Se o passo a passo for seguido corretamente como descrito acima, no final o usuário terá um prontuário profissional em seu aplicativo, totalmente funcional e aberto para edições e exclusão, em modo online e offline.
 
 \section{Desenvolvimento do Aplicativo}
 O desenvolvimento da aplicação foi executado fundamentando-se nos princípios da Engenharia de Software, visando à construção de uma solução técnica plenamente funcional, modular e escalável. O sistema foi estruturado de forma desacoplada, dividindo-se entre a camada do cliente (\textit{front-end} móvel) e a camada de suporte (\textit{back-end}), permitindo a distribuição isolada das responsabilidades e a aplicação rigorosa das regras de negócio.
@@ -187,12 +194,14 @@ O processo de sincronização foi projetado a partir do rastreamento das altera�
 
 \begin{itemize}
     \item \textbf{Operação local (com ou sem conexão):} Todas as operações de CRUD são executadas exclusivamente no \textit{WatermelonDB}, independentemente do estado da rede. Criações, atualizações e exclusões ficam registradas localmente como pendentes e, no momento da sincronização, é enviado o estado mais recente de cada registro, e não cada operação intermediária.
-    \item \textbf{Sincronização e reconexão:} A sincronização é disparada quando a aplicação é aberta, quando retorna ao primeiro plano, quando a conexão de rede é restabelecida e, periodicamente, enquanto o dispositivo permanece conectado. Cada ciclo ocorre em duas etapas sobre uma rota única da API: primeiro, o aplicativo obtém as alterações realizadas no servidor desde a última sincronização (\textit{pull}), em seguida, envia em um único lote todas as alterações locais pendentes (\textit{push}). Em caso de falha, o ciclo é repetido automaticamente em intervalos regulares.
+    %CORRIGIDO
+    \item \textbf{Sincronização e reconexão:} A sincronização é disparada quando a aplicação é aberta, quando retorna ao primeiro plano, quando a conexão de rede é restabelecida e, periodicamente, enquanto o dispositivo permanece conectado. Cada ciclo ocorre em duas etapas sobre uma rota única da API: primeiro, o aplicativo obtém as alterações realizadas no servidor desde a última sincronização (\textit{pull}), em seguida, envia em um único lote todas as alterações locais pendentes (\textit{push}). Em caso de falha, o ciclo é repetido automaticamente em intervalos regulares. A Figura~\ref{fig:sincronizacaoCap} apresenta o aplicativo após a conclusão bem-sucedida de um ciclo de sincronização.
 \end{itemize}
 
 \begin{figure}[H] 
     \centering 
-    \caption{Demonstração de Sincronização Bem-Sucedida no App} 
+    %CORRIGIDO
+    \caption{Demonstração de Sincronização Bem-Sucedida no Aplicativo} 
     \includegraphics[width=0.55\linewidth]{sincronizacaoCap.png} 
     \fonte{Elaboração própria.}
     \label{fig:sincronizacaoCap} 
@@ -209,4 +218,4 @@ Para a resolução de potenciais conflitos de concorrência, cenário comum em s
 \section{Tecnologias para Desenvolvimento Mobile e Armazenamento Local}
 \label{sec:roadvet-tecnologias}
 %CORRIGIDO
-Buscando o resultado de uma aplicação intuitiva e funcional, foram escolhidas as tecnologias React Native para a camada do cliente e o WatermelonDB para fazer a persistência dos dados nessa camada, de forma que os dados já sejam carregados no dispositivo do usuário de forma \textit{offline}. Para a persistência dos dados na camada do servidor foi utilizado o \textit{SQLite}, Sistema Gerenciador de Banco de Dados muito eficiente e leve. Já para a criação da Interface de Aplicação foi utilizado o \textit{Django REST Framework}, que permite que os dados sejam enviados em formato de texto para a camada que se comunica com o usuário, garantindo a usabilidade total do sistema. Além dessas tecnologias de alto nível de desenvolvimento, o sistema em questão fez uso do \textit{Hypertext Transfer Protocol} (HTTP)\footnote{\url{https://ics.uci.edu/~fielding/pubs/dissertation/top.htm}} para o envio de textos entre a camada de suporte e a camada de cliente, como também a Arquitetura Rest para a criação da lógica de Interface de Aplicação de Informações com suas respectivas rotas.
+Buscando o resultado de uma aplicação intuitiva e funcional, foram escolhidas as tecnologias React Native para a camada do cliente e o WatermelonDB para fazer a persistência dos dados nessa camada, de forma que os dados já sejam carregados no dispositivo do usuário de forma \textit{offline}. Para a persistência dos dados na camada do servidor foi utilizado o \textit{SQLite}, Sistema Gerenciador de Banco de Dados muito eficiente e leve. Já para a criação da Interface de Programação de Aplicações (API) foi utilizado o \textit{Django REST Framework}, que permite que os dados sejam enviados em formato JSON para a camada que se comunica com o usuário. Além dessas tecnologias de alto nível de desenvolvimento, o sistema em questão fez uso do \textit{Hypertext Transfer Protocol} (HTTP)\footnote{\url{https://ics.uci.edu/~fielding/pubs/dissertation/top.htm}} para o envio de textos entre a camada de suporte e a camada de cliente, como também a arquitetura REST para a definição da API e de suas respectivas rotas.
