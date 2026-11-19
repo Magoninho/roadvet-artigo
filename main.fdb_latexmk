@@ -1,30 +1,30 @@
 # Fdb version 4
-["bibtex main"] 1795027617.7619 "main.aux" "main.bbl" "main" 1795027621.40126 0
-  "./elementos-pos-textuais/referencias.bib" 1795024035.90706 5061 9b5c98e733d59ec5aa3e5e9770a3e19b ""
+["bibtex main"] 1795111247.21267 "main.aux" "main.bbl" "main" 1795111250.6298 0
+  "./elementos-pos-textuais/referencias.bib" 1795101394.62231 8455 c81dd41004a6f45fd7ac91b8756a5e7d ""
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "main.aux" 1795027621.17887 32919 e650f2c907e6049932166129f21573df "pdflatex"
+  "main.aux" 1795111250.35033 39360 a87679ae24abdf2cb620b55fd8d81bad "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["cusdep acn acr main"] 1795024036.04119 "main.acn" "main.acr" "main" 1795027621.40147 0
-  "main.acn" 1795027621.18987 2382 517eef5bbb8133e8564524d621ad7142 "pdflatex"
+["cusdep acn acr main"] 1795111243.69962 "main.acn" "main.acr" "main" 1795111250.63001 0
+  "main.acn" 1795111250.36433 2542 44adcdf56e109624a561281ffdde9cde "pdflatex"
   (generated)
   "main.acr"
   (rewritten before read)
-["cusdep glo gls main"] 1795027617.66959 "main.glo" "main.gls" "main" 1795027621.40118 0
-  "main.glo" 1795027621.18987 2455 851ccd1c769cb0cc6d824c1f5c3c1eda "pdflatex"
+["cusdep glo gls main"] 1795111243.57145 "main.glo" "main.gls" "main" 1795111250.62972 0
+  "main.glo" 1795111250.36433 2455 0ede1ce894021f0f7338e0e389f497ae "pdflatex"
   (generated)
   "main.gls"
   (rewritten before read)
-["makeindex main.idx"] 1795024035.98081 "main.idx" "main.ind" "main" 1795027621.40098 0
-  "main.idx" 1795027619.18431 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex main.idx"] 1795111243.55155 "main.idx" "main.ind" "main" 1795111250.62956 0
+  "main.idx" 1795111248.22626 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1795027617.80275 "main.tex" "main.pdf" "main" 1795027621.40153 0
+["pdflatex"] 1795111247.26191 "main.tex" "main.pdf" "main" 1795111250.63007 0
   "/etc/texmf/web2c/texmf.cnf" 1794431446.79008 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -231,34 +231,34 @@
   "TelaFormulario1.png" 1794432110.80974 24245 6d5b98e783f5ff58efa986b5a87ae18e ""
   "TelaProntuarioCriacaoApp.png" 1794432110.81074 49092 e7d515929df844126e18236561af3d41 ""
   "brasil_pets_mundo.png" 1794432110.81374 31443 913082beecabf66ba15de2961ca2bed5 ""
-  "elementos-pos-textuais/apendices/requisitos.tex" 1794851843.63994 10151 1eb243af5e99ac41cc77073c2f273461 ""
+  "elementos-pos-textuais/apendices/requisitos.tex" 1795107990.2278 10226 66a18826356f4922c32d88fe8421d695 ""
   "elementos-pos-textuais/glossario.tex" 1795021134.41738 5179 33ff885dc4e261975faf4eeb4f2e744a ""
-  "elementos-pre-textuais/abstract.tex" 1794851881.86454 1779 d250505c1606b48793fc502c6dcd4890 ""
-  "elementos-pre-textuais/lista-de-abreviaturas-e-siglas.tex" 1795021134.41704 2104 441d76a230d3139b5c21af5f3832bb6b ""
-  "elementos-pre-textuais/resumo.tex" 1794851986.62322 1939 792c7f01dbe7001b15aae1d737b4e187 ""
-  "elementos-textuais/autodeclaracaoIA.tex" 1795027613.19678 2412 b405a9e08f3862510c856ce2414d8c0c ""
-  "elementos-textuais/conclusao.tex" 1795020322.92614 5934 7a283731dba85d32239d358659db5523 ""
-  "elementos-textuais/fundamentacao-teorica.tex" 1795023989.4847 9156 86648ac0eb04697b3cc74ff5ef2de640 ""
-  "elementos-textuais/introducao.tex" 1795023989.48441 8177 cf41a6cf8b45ad1522297d2b0099b4d3 ""
-  "elementos-textuais/metodologia.tex" 1795023989.48457 9229 c1a0d6c56fe46e908cdd2504579e6f38 ""
-  "elementos-textuais/resultados.tex" 1794432110.81635 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "elementos-textuais/roadvet.tex" 1795021134.4119 20239 c59a75b4e0e30ae98f74be55b5687bf9 ""
-  "elementos-textuais/trabalhos-relacionados.tex" 1795021134.41203 5661 fe495c00bcfca2162fa355b5802541f1 ""
+  "elementos-pre-textuais/abstract.tex" 1795107990.22217 1799 967591e622f473a6e529fec8f06cb770 ""
+  "elementos-pre-textuais/lista-de-abreviaturas-e-siglas.tex" 1795106225.39823 2246 9f0262f24f7ffc5a6018b0bd728112a8 ""
+  "elementos-pre-textuais/resumo.tex" 1795107990.22714 1983 07a5a7f1e70f041e0ab225af4e212d09 ""
+  "elementos-textuais/autodeclaracaoIA.tex" 1795109132.42706 2424 2b5f3ce445a466b78a1e5c15f0e3a813 ""
+  "elementos-textuais/conclusao.tex" 1795107990.22333 6471 11617577627dd199dd1c2f444a754a15 ""
+  "elementos-textuais/fundamentacao-teorica.tex" 1795110878.18612 9486 10c4e4b4eb358b690b1550503a3e7f68 ""
+  "elementos-textuais/introducao.tex" 1795107990.22818 8596 af604e57b98cd9d29138c375df9c4de9 ""
+  "elementos-textuais/metodologia.tex" 1795107990.22825 9101 69b40458772fef928f25ee35da25735b ""
+  "elementos-textuais/resultados.tex" 1795110741.1727 6938 5273b9456c51f139fff72bb75a5004a6 ""
+  "elementos-textuais/roadvet.tex" 1795110958.28655 20192 e92de554bf25b85f458e5263ca68e653 ""
+  "elementos-textuais/trabalhos-relacionados.tex" 1795110991.6125 4660 16cf8bc0c1cb622878b16a57ab07945e ""
   "gato_vet.jpg" 1794432110.83874 2955918 e848bab102ab7217a9769caad988e03d ""
   "lib/Imagem1.png" 1794432110.83874 5922 a0b2802646f7b814ffb5005a64fca044 ""
   "lib/preambulo.tex" 1794432110.83995 5594 492ac3a7a59a28a47cde2e3f6cd7e5dc ""
   "lib/unifortex2.sty" 1794432110.84074 46295 90b3ee9a1fd734361d05f4ce82e71ca3 ""
-  "main.acr" 1795027617.7587 3695 b5a2896bded13f0abd8101dafbab0d08 "cusdep acn acr main"
-  "main.aux" 1795027621.17887 32919 e650f2c907e6049932166129f21573df "pdflatex"
-  "main.bbl" 1795027617.79356 5639 4719e6a60e0ecd34e95030ad567dbb9e "bibtex main"
-  "main.gls" 1795027617.72683 3393 38e90c22452037116420626d5dfbcb55 "cusdep glo gls main"
-  "main.ind" 1795024035.99037 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.lof" 1795027621.18987 1805 ba477a2a3d05b9271fb50b6ed74bac3b "pdflatex"
-  "main.tex" 1795027614.31072 8195 37640336f568f9f60cba2aa377880d2a ""
-  "main.toc" 1795027621.18987 5177 82c1ad7e2e0180ac3c5a26a54afa1888 "pdflatex"
+  "main.acr" 1795111243.78012 3886 8eec7326f59732b067ef6a238c723c8c "cusdep acn acr main"
+  "main.aux" 1795111250.35033 39360 a87679ae24abdf2cb620b55fd8d81bad "pdflatex"
+  "main.bbl" 1795111247.25526 8930 5b08c1621b598b68971cd957ed18958b "bibtex main"
+  "main.gls" 1795111243.75216 3393 5e2fef878401757c98160ed57e5a97f7 "cusdep glo gls main"
+  "main.ind" 1795111243.56912 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
+  "main.lof" 1795111250.36433 1681 8782480019ef4c7fc3ba4f4f5c45792e "pdflatex"
+  "main.lot" 1795111250.36433 151 32d639788c43573b2bf5563c79df0aee "pdflatex"
+  "main.tex" 1795111243.41255 8528 941cc052f5b440907d08fa82d8362eba ""
+  "main.toc" 1795111250.36433 6217 4648f7c4bc4cd2abfb482bb0a1b4b188 "pdflatex"
   "painelPrincipalApp.png" 1794432110.87174 59462 e89564ad372e556676905fa14089c722 ""
   "sincronizacaoCap.png" 1794849159.04264 15940 885b37838ddf616a81f659741fd987e3 ""
-  "tabela_trabalhos_relacionados.png" 1794542707.16659 23677 af249c3af84ea529746ceec4634a4aa1 ""
   "telaDeBoasVindasApp.png" 1794432110.87274 118345 cca3a2e83aeb9ecd726dafc441ec0d4c ""
   "telaDeLoginApp.png" 1794432110.87274 116657 38ebd90eeac052c845638fa7773c3ba5 ""
   "telaDeProntuariosApp.png" 1794432110.87374 59929 6c35bd79ffb7880f71377204c518ee0d ""
@@ -271,6 +271,7 @@
   "main.ist"
   "main.lof"
   "main.log"
+  "main.lot"
   "main.pdf"
   "main.toc"
   (rewritten before read)

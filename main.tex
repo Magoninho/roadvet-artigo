@@ -120,6 +120,9 @@ VETERINÁRIA EM REGIÕES DE BAIXA CONECTIVIDADE.
 %\membrodabancaseisies{Universidade do Membro da Banca Seis - SIGLA}
 
 \usepackage{float}
+% NBR 6023:2018: os endereços eletrônicos não são mais delimitados por < >.
+% O abntex2cite ainda os adiciona; aqui eles são removidos.
+\makeatletter\def\UrlLeft{}\def\UrlRight{}\makeatother
 
 \makeatletter
 \renewcommand{\folhaderostocontent}{%
@@ -186,7 +189,10 @@ VETERINÁRIA EM REGIÕES DE BAIXA CONECTIVIDADE.
     \imprimirresumo{elementos-pre-textuais/resumo}
     \imprimirabstract{elementos-pre-textuais/abstract}
     \imprimirlistadeilustracoes
-    %\imprimirlistadetabelas
+    \clearpage % a classe não quebra a página após a lista de ilustrações
+    % \imprimirlistadetabelas da classe gera uma página em branco antes da lista de siglas;
+    % por isso a lista de tabelas é impressa diretamente (a lista de siglas já inicia nova página).
+    \begin{KeepFromToc}\listoftables\end{KeepFromToc}
     %\imprimirlistadequadros
     %\imprimirlistadealgoritmos
     %\imprimirlistadecodigosfonte
@@ -214,9 +220,6 @@ VETERINÁRIA EM REGIÕES DE BAIXA CONECTIVIDADE.
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \postextual
 
-    \nocite{nibblett2015,pimazzoni2023,fielding2000,kleppmann2017}
-    \nocite{reactnative,drf,watermelondb,sqlite}
-    \nocite{simplesvet,leisansao2020,lgpd2018}
     \bibliography{elementos-pos-textuais/referencias}
 
     \glsaddall[types={main}]

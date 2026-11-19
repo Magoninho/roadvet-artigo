@@ -1,0 +1,42 @@
+\chapter{Resultados}
+\label{cap:resultados}
+
+Este capítulo apresenta os resultados obtidos com o desenvolvimento do RoadVet. Inicialmente, descreve-se a aplicação desenvolvida, posteriormente, são apresentados os resultados dos testes realizados com o aplicativo instalado em um dispositivo Android, em cenários com e sem conexão com a internet. Por fim, discute-se o atendimento aos objetivos propostos e as limitações identificadas.
+
+\section{Aplicação Desenvolvida}
+\label{sec:resultados-aplicacao}
+
+Como resultado principal, obteve-se uma aplicação móvel funcional, composta por uma camada de cliente desenvolvida em \textit{React Native} com persistência local em \textit{WatermelonDB} e por uma API desenvolvida com o \textit{Django REST Framework}. A aplicação permite o cadastro e a autenticação de veterinários, a gestão de tutores, animais e prontuários clínicos, o envio de anexos de exames em PDF ou imagem e a pesquisa, filtragem e ordenação dos registros, conforme o fluxo apresentado no Capítulo~\ref{cap:roadvet}.
+
+Do ponto de vista do paradigma \textit{offline-first}, as operações de cadastro, consulta, atualização e exclusão são executadas sobre o banco de dados local do dispositivo, de modo que a ausência de conexão não interrompe o fluxo de atendimento. A sincronização com o servidor ocorre de forma automática quando a aplicação é aberta, quando retorna ao primeiro plano e quando a conexão é restabelecida. Em caso de falha de comunicação, uma nova tentativa é realizada sem intervenção do usuário. A interface informa o estado da conexão e da sincronização por meio de um indicador no cabeçalho, que assume os estados \textit{online}, sincronizando e \textit{offline}, além de exibir o horário da última sincronização bem-sucedida na tela principal.
+
+\section{Testes da Aplicação em Cenários de Conectividade}
+\label{sec:resultados-conectividade}
+
+Os testes seguiram o procedimento descrito no Capítulo~\ref{chap:metodologia}. O aplicativo foi instalado, por meio de um pacote APK, em um \textit{smartphone} Android, comunicando-se com a API hospedada na plataforma Fly.io. Foram cadastrados dados fictícios de tutores, pacientes e prontuários, incluindo anexos de exames e imagens de perfil, em três situações: com conexão à internet, com o modo avião ativado e após o restabelecimento da conexão por meio da rede Wi-Fi ou dos dados móveis.
+
+\subsection{Uso com Conexão à Internet}
+
+Com o dispositivo conectado à internet, foram cadastrados tutores, pacientes e prontuários, com anexos de exames e imagens de perfil. Os registros foram gravados no banco de dados local e enviados ao servidor de forma automática, sem que fosse necessária qualquer ação adicional do usuário além do próprio cadastro. Durante o envio, o indicador do cabeçalho exibiu brevemente o estado sincronizando e, ao término, passou a exibir o ícone de uma nuvem com um sinal de confirmação, correspondente ao estado \textit{online}, enquanto a tela principal informou que todos os dados estavam sincronizados, junto ao horário da última sincronização.
+
+\subsection{Uso sem Conexão (Modo Avião)}
+
+Com o modo avião ativado, o indicador do cabeçalho passou ao estado \textit{offline}, e a tela principal passou a informar que os dados permaneceriam salvos no aparelho e seriam sincronizados quando a conexão retornasse. Nessa condição, foi possível cadastrar, consultar, editar e excluir tutores, pacientes e prontuários normalmente, incluindo a anexação de arquivos e a definição de imagens de perfil, sem mensagens de erro ou bloqueio das funcionalidades. Os registros criados permaneceram disponíveis após o fechamento e a reabertura do aplicativo, confirmando a persistência local dos dados.
+
+\subsection{Restabelecimento da Conexão}
+
+Ao desativar o modo avião e restabelecer a conexão, seja pela rede Wi-Fi, seja pelos dados móveis, a sincronização foi iniciada automaticamente, sem intervenção do usuário. O indicador do cabeçalho passou pelo estado sincronizando e, ao final do processo, retornou ao estado \textit{online}. Os registros criados e alterados durante o período sem conexão passaram a constar no servidor, e os anexos e as imagens de perfil foram enviados logo após os demais dados, uma vez que os arquivos são transmitidos depois da sincronização das informações dos registros a que pertencem. A Figura~\ref{fig:sincronizacaoCap} ilustra o aplicativo após a conclusão bem-sucedida de um ciclo de sincronização.
+
+\subsection{Ocorrências Observadas}
+
+Durante os testes, não foram observadas perdas de dados nem falhas que impedissem o uso da aplicação nos cenários avaliados. Observou-se apenas que, após o restabelecimento da conexão, os anexos e as imagens de perfil foram disponibilizados no servidor alguns instantes depois dos demais dados, comportamento esperado em razão do envio dos arquivos ocorrer em uma etapa posterior à sincronização dos registros.
+
+\section{Atendimento aos Objetivos}
+\label{sec:resultados-objetivos}
+
+Os resultados obtidos permitem relacionar o artefato desenvolvido aos objetivos específicos definidos na Seção~\ref{sec:objetivos-especificos}. A persistência local em dispositivos móveis foi implementada com o \textit{WatermelonDB}, que mantém os dados disponíveis sem conexão e registra internamente as alterações pendentes de envio. A interface informa o estado da conexão e da sincronização por meio de um indicador visual. O mecanismo de sincronização assíncrona foi projetado e implementado sobre uma rota única da API, com envio e recebimento em lote. Por fim, os testes realizados em dispositivo Android, com ausência e restabelecimento de conexão, permitiram validar a persistência local e a sincronização dos dados, conforme apresentado na Seção~\ref{sec:resultados-conectividade}.
+
+\section{Limitações Identificadas}
+\label{sec:resultados-limitacoes}
+
+Apesar dos resultados positivos, algumas limitações foram identificadas. A estratégia de resolução de conflitos considera a ordem de chegada das alterações ao servidor, e não o momento em que cada edição foi realizada no dispositivo, dessa maneira, em edições concorrentes do mesmo registro feitas em aparelhos distintos sem conexão, a versão sincronizada por último prevalece, ainda que seja a mais antiga. Além disso, a interface informa o estado geral da sincronização, mas não sinaliza individualmente quais registros ainda estão pendentes de envio. A aplicação contempla, em sua versão atual, apenas cães e gatos, não abrangendo animais de grande porte. Por fim, os testes foram realizados pelos próprios autores, com dados fictícios e em um único dispositivo, sem a participação de veterinários em atendimentos reais. Essas limitações orientam parte dos trabalhos futuros apresentados no Capítulo~\ref{cap:conclusao}.

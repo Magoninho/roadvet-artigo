@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.11.11)  18 NOV 2026 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.11.11)  19 NOV 2026 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1284,32 +1284,32 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box86
 )
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 16
-6.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-Package hyperref Info: Link coloring OFF on input line 166.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+Package hyperref Info: Link coloring OFF on input line 169.
 \myptabbox=\box87
 \myptabboxwidth=\skip313
 
@@ -1336,19 +1336,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count453
-LaTeX Info: Redefining \microtypecontext on input line 166.
-Package microtype Info: Applying patch `item' on input line 166.
-Package microtype Info: Applying patch `toc' on input line 166.
-Package microtype Info: Applying patch `eqnum' on input line 166.
-Package microtype Info: Applying patch `footnote' on input line 166.
-Package microtype Info: Applying patch `verbatim' on input line 166.
+LaTeX Info: Redefining \microtypecontext on input line 169.
+Package microtype Info: Applying patch `item' on input line 169.
+Package microtype Info: Applying patch `toc' on input line 169.
+Package microtype Info: Applying patch `eqnum' on input line 169.
+Package microtype Info: Applying patch `footnote' on input line 169.
+Package microtype Info: Applying patch `verbatim' on input line 169.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 166.
+LaTeX Info: Redefining \showhyphens on input line 169.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1375,10 +1375,10 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <lib/Imagem1.png, id=4, 78.2925pt x 79.04532pt>
 File: lib/Imagem1.png Graphic file (type png)
 <use lib/Imagem1.png>
-Package pdftex.def Info: lib/Imagem1.png  used on input line 172.
+Package pdftex.def Info: lib/Imagem1.png  used on input line 175.
 (pdftex.def)             Requested size: 70.46259pt x 71.1401pt.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 172.
+ 175.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -1388,19 +1388,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 172.
+ 175.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 172.
+ 175.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 172.
+ 175.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
@@ -1412,24 +1412,24 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-72.
+75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 175.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 175.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 172.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 175.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 
  []
 
 
-Overfull \hbox (43.22836pt too wide) in paragraph at lines 172--172
+Overfull \hbox (43.22836pt too wide) in paragraph at lines 175--175
 $[]$ $[]$ 
  []
 
@@ -1439,7 +1439,7 @@ $[]$ $[]$
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc} <./lib/Imagem1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
 
  []
 
@@ -1448,7 +1448,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.175     \end{folhaderosto}
+l.178     \end{folhaderosto}
                                 % Ficha catalogrÃ¡fica inserida como PDF%
 [1
 
@@ -1459,197 +1459,207 @@ l.175     \end{folhaderosto}
 ]
 (./elementos-pre-textuais/abstract.tex) [3
 
-] (./main.lof) (./main.acr [4
+] (./main.lof) [4
+
+] (./main.lot)
+(./main.acr [5
 
 ]
-Overfull \hbox (2.66368pt too wide) in alignment at lines 2--74
+Overfull \hbox (2.66368pt too wide) in alignment at lines 2--78
  [] [] 
  []
 
-) [5
+) [6
 
 
-] (./main.toc [6]) [7] (./elementos-textuais/introducao.tex [8
+] (./main.toc [7]) [8] (./elementos-textuais/introducao.tex [9
 
 
-] [9]
-[10]) (./elementos-textuais/fundamentacao-teorica.tex [11]
-<brasil_pets_mundo.png, id=221, 669.50125pt x 493.845pt>
+] [10])
+(./elementos-textuais/fundamentacao-teorica.tex [11]
+<brasil_pets_mundo.png, id=249, 669.50125pt x 493.845pt>
 File: brasil_pets_mundo.png Graphic file (type png)
 <use brasil_pets_mundo.png>
-Package pdftex.def Info: brasil_pets_mundo.png  used on input line 20.
+Package pdftex.def Info: brasil_pets_mundo.png  used on input line 21.
 (pdftex.def)             Requested size: 227.50482pt x 167.81464pt.
  [12
 
  <./brasil_pets_mundo.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+1.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<gato_vet.jpg, id=236, 6022.5pt x 4015.0pt>
+<gato_vet.jpg, id=276, 6022.5pt x 4015.0pt>
 File: gato_vet.jpg Graphic file (type jpg)
 <use gato_vet.jpg>
-Package pdftex.def Info: gato_vet.jpg  used on input line 43.
+Package pdftex.def Info: gato_vet.jpg  used on input line 45.
 (pdftex.def)             Requested size: 227.44218pt x 151.62811pt.
- [13 <./gato_vet.jpg>]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
- [14]) (./elementos-textuais/trabalhos-relacionados.tex [15]
-[16
+ [13] [14 <./gato_vet.jpg>]) (./elementos-textuais/trabalhos-relacionados.tex [
+15] [16
 
-]
-<tabela_trabalhos_relacionados.png, id=260, 605.26125pt x 208.78pt>
-File: tabela_trabalhos_relacionados.png Graphic file (type png)
-<use tabela_trabalhos_relacionados.png>
-Package pdftex.def Info: tabela_trabalhos_relacionados.png  used on input line 
-49.
-(pdftex.def)             Requested size: 455.0069pt x 156.95094pt.
-) (./elementos-textuais/metodologia.tex [17 <./tabela_trabalhos_relacionados.pn
-g>] [18
+])
+(./elementos-textuais/metodologia.tex [17] [18
 
-] [19] [20]) (./elementos-textuais/roadvet.tex [21]
-<ArquiteturaSistema.png, id=289, 1088.065pt x 1389.19pt>
+] [19] [20])
+(./elementos-textuais/roadvet.tex [21]
+<ArquiteturaSistema.png, id=346, 1088.065pt x 1389.19pt>
 File: ArquiteturaSistema.png Graphic file (type png)
 <use ArquiteturaSistema.png>
-Package pdftex.def Info: ArquiteturaSistema.png  used on input line 14.
+Package pdftex.def Info: ArquiteturaSistema.png  used on input line 15.
 (pdftex.def)             Requested size: 455.0pt x 580.93335pt.
  [22
 
 ] [23 <./ArquiteturaSistema.png>]
-<telaDeBoasVindasApp.png, id=300, 509.905pt x 816.04875pt>
+<telaDeBoasVindasApp.png, id=357, 509.905pt x 816.04875pt>
 File: telaDeBoasVindasApp.png Graphic file (type png)
 <use telaDeBoasVindasApp.png>
-Package pdftex.def Info: telaDeBoasVindasApp.png  used on input line 40.
+Package pdftex.def Info: telaDeBoasVindasApp.png  used on input line 39.
 (pdftex.def)             Requested size: 200.69835pt x 321.19638pt.
- [24]
-<teladDeCadastroApp.png, id=307, 520.94624pt x 843.15pt>
+
+[24]
+<teladDeCadastroApp.png, id=364, 520.94624pt x 843.15pt>
 File: teladDeCadastroApp.png Graphic file (type png)
 <use teladDeCadastroApp.png>
-Package pdftex.def Info: teladDeCadastroApp.png  used on input line 51.
+Package pdftex.def Info: teladDeCadastroApp.png  used on input line 50.
 (pdftex.def)             Requested size: 198.45447pt x 321.19798pt.
  [25 <./telaDeBoasVindasApp.png>]
-<telaDeLoginApp.png, id=315, 442.65375pt x 782.925pt>
+<telaDeLoginApp.png, id=372, 442.65375pt x 782.925pt>
 File: telaDeLoginApp.png Graphic file (type png)
 <use telaDeLoginApp.png>
-Package pdftex.def Info: telaDeLoginApp.png  used on input line 64.
+Package pdftex.def Info: telaDeLoginApp.png  used on input line 63.
 (pdftex.def)             Requested size: 181.60402pt x 321.20442pt.
  [26 <./teladDeCadastroApp.png>] [27 <./telaDeLoginApp.png>]
-<painelPrincipalApp.png, id=327, 445.665pt x 818.05624pt>
+<painelPrincipalApp.png, id=384, 445.665pt x 818.05624pt>
 File: painelPrincipalApp.png Graphic file (type png)
 <use painelPrincipalApp.png>
-Package pdftex.def Info: painelPrincipalApp.png  used on input line 78.
+Package pdftex.def Info: painelPrincipalApp.png  used on input line 77.
 (pdftex.def)             Requested size: 174.98509pt x 321.20012pt.
-<telaDeProntuariosApp.png, id=329, 446.66875pt x 887.315pt>
+<telaDeProntuariosApp.png, id=386, 446.66875pt x 887.315pt>
 File: telaDeProntuariosApp.png Graphic file (type png)
 <use telaDeProntuariosApp.png>
 Package pdftex.def Info: telaDeProntuariosApp.png  used on input line 90.
 (pdftex.def)             Requested size: 161.68665pt x 321.19327pt.
  [28 <./painelPrincipalApp.png>]
-<TelaProntuarioCriacaoApp.png, id=336, 448.67625pt x 817.0525pt>
+<TelaProntuarioCriacaoApp.png, id=393, 448.67625pt x 817.0525pt>
 File: TelaProntuarioCriacaoApp.png Graphic file (type png)
 <use TelaProntuarioCriacaoApp.png>
-Package pdftex.def Info: TelaProntuarioCriacaoApp.png  used on input line 105.
+Package pdftex.def Info: TelaProntuarioCriacaoApp.png  used on input line 104.
 (pdftex.def)             Requested size: 176.3865pt x 321.20497pt.
-
-[29 <./telaDeProntuariosApp.png>]
-<TelaFormulario1.png, id=343, 440.64626pt x 739.76375pt>
+ [29 <./telaDeProntuariosApp.png>]
+<TelaFormulario1.png, id=400, 440.64626pt x 739.76375pt>
 File: TelaFormulario1.png Graphic file (type png)
 <use TelaFormulario1.png>
-Package pdftex.def Info: TelaFormulario1.png  used on input line 120.
+Package pdftex.def Info: TelaFormulario1.png  used on input line 118.
 (pdftex.def)             Requested size: 191.32321pt x 321.19637pt.
  [30 <./TelaProntuarioCriacaoApp.png>]
-<FormularioProntuario2.png, id=351, 453.695pt x 629.35126pt>
+<FormularioProntuario2.png, id=408, 453.695pt x 629.35126pt>
 File: FormularioProntuario2.png Graphic file (type png)
 <use FormularioProntuario2.png>
-Package pdftex.def Info: FormularioProntuario2.png  used on input line 135.
+Package pdftex.def Info: FormularioProntuario2.png  used on input line 132.
 (pdftex.def)             Requested size: 227.49768pt x 315.57755pt.
-
-[31 <./TelaFormulario1.png>]
-<NovoPetProntuario.png, id=359, 451.6875pt x 743.77875pt>
+ [31 <./TelaFormulario1.png>]
+<NovoPetProntuario.png, id=417, 451.6875pt x 743.77875pt>
 File: NovoPetProntuario.png Graphic file (type png)
 <use NovoPetProntuario.png>
-Package pdftex.def Info: NovoPetProntuario.png  used on input line 150.
+Package pdftex.def Info: NovoPetProntuario.png  used on input line 146.
 (pdftex.def)             Requested size: 195.06268pt x 321.20322pt.
- [32 <./FormularioProntuario2.png>] [33 <./NovoPetProntuario.png>]
-<CadastroTutorApp.png, id=372, 451.6875pt x 743.77875pt>
+
+[32 <./FormularioProntuario2.png>] [33 <./NovoPetProntuario.png>]
+<CadastroTutorApp.png, id=430, 451.6875pt x 743.77875pt>
 File: CadastroTutorApp.png Graphic file (type png)
 <use CadastroTutorApp.png>
-Package pdftex.def Info: CadastroTutorApp.png  used on input line 166.
+Package pdftex.def Info: CadastroTutorApp.png  used on input line 162.
 (pdftex.def)             Requested size: 195.06268pt x 321.20322pt.
  [34
 
  <./CadastroTutorApp.png>] [35]
-<sincronizacaoCap.png, id=383, 385.44pt x 196.48407pt>
+<sincronizacaoCap.png, id=454, 385.44pt x 196.48407pt>
 File: sincronizacaoCap.png Graphic file (type png)
 <use sincronizacaoCap.png>
-Package pdftex.def Info: sincronizacaoCap.png  used on input line 205.
+Package pdftex.def Info: sincronizacaoCap.png  used on input line 202.
 (pdftex.def)             Requested size: 250.25139pt x 127.56921pt.
- [36 <./sincronizacaoCap.png (PNG copy)>]) (./elementos-textuais/resultados.tex
-)
-(./elementos-textuais/conclusao.tex [37] [38
+ [36 <./sincronizacaoCap.png (PNG copy)>])
+(./elementos-textuais/resultados.tex [37] [38
 
 ] [39])
-(./elementos-textuais/autodeclaracaoIA.tex [40]) (./main.bbl [41
+(./elementos-textuais/conclusao.tex [40] [41
+
+] [42])
+(./elementos-textuais/autodeclaracaoIA.tex [43]) (./main.bbl [44
 
 ]
 bibitemlist
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--24
-[]\T1/ptm/m/n/12 (+20) ARBEX, J. \T1/ptm/b/n/12 (+20) Bra-sil ga-nha 8 mil no-v
-os es-ta-be-le-ci-men-tos pet em 2024\T1/ptm/m/n/12 (+20) .
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+[]\T1/ptm/m/n/12 (+20) ARBEX, J. Bra-sil ga-nha 8 mil no-vos es-ta-be-le-ci-men
+-tos pet em 2024. \T1/ptm/b/n/12 (+20) Elo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--24
-\T1/ptm/m/n/12 (+20) 2025. Elo-Vet-Net. 26 maio 2025. Dis-po-ní-vel em: []$<[]h
-ttps : / / elovetnet . com . br /
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+\T1/ptm/b/n/12 (+20) Vet-Net\T1/ptm/m/n/12 (+20) , [\T1/ptm/m/it/12 (+20) S. l.
+\T1/ptm/m/n/12 (+20) ], 26 maio 2025. Dis-po-ní-vel em: []$https : / / elovetne
+t . com . br /
  []
 
-[42
+[45
 
 ]
-Underfull \hbox (badness 5359) in paragraph at lines 127--133
-[]\T1/ptm/m/n/12 (+20) VIDAL, C. \T1/ptm/b/n/12 (+20) Nos úl-ti-mos dois anos, 
-aber-tura de pe-que-nos ne-gó-cios do mer-
+Underfull \hbox (badness 3884) in paragraph at lines 119--124
+[]\T1/ptm/m/n/12 (+20) OLIVEIRA, S. Nú-mero de ani-mais aban-do-na-dos no Bra-s
+il se-gue alar-mante. \T1/ptm/b/n/12 (+20) Jor-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--133
-\T1/ptm/b/n/12 (+20) cado pet cres-ceu 22% no país\T1/ptm/m/n/12 (+20) . 2026. 
-Agên-cia Se-brae de No-tí-cias. 6 fev.
+Underfull \hbox (badness 2334) in paragraph at lines 119--124
+\T1/ptm/b/n/12 (+20) nal da USP\T1/ptm/m/n/12 (+20) , [\T1/ptm/m/it/12 (+20) S.
+ l.\T1/ptm/m/n/12 (+20) ], 2 mar. 2026. Dis-po-ní-vel em: []$https : / / jornal
+ . usp . br / atualidades /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--133
-\T1/ptm/m/n/12 (+20) 2026. Dis-po-ní-vel em: []$<[]https : / / agenciasebrae . 
-com . br / cultura-[]empreendedora /
+Underfull \hbox (badness 10000) in paragraph at lines 179--185
+[]\T1/ptm/m/n/12 (+20) VIDAL, C. Nos úl-ti-mos dois anos, aber-tura de pe-que-n
+os ne-gó-cios do mer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--133
+Underfull \hbox (badness 10000) in paragraph at lines 179--185
+\T1/ptm/m/n/12 (+20) cado pet cres-ceu 22% no país. \T1/ptm/b/n/12 (+20) Agên-c
+ia Se-brae de No-tí-cias\T1/ptm/m/n/12 (+20) , [\T1/ptm/m/it/12 (+20) S. l.\T1/
+ptm/m/n/12 (+20) ], 6
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--185
+\T1/ptm/m/n/12 (+20) fev. 2026. Dis-po-ní-vel em: []$https : / / agenciasebrae 
+. com . br / cultura-[]empreendedora /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--185
 \T1/ptm/m/n/12 (+20) nos-[]ultimos-[]dois-[]anos-[]abertura-[]pequenos-[]negoci
-os-[]do-[]mercado-[]pet-[]cresceu-[]22-[]no-[]pais / >[]$[].
+os-[]do-[]mercado-[]pet-[]cresceu-[]22-[]no-[]pais/$[].
  []
 
-) (./main.gls [43] [44
+) (./main.gls [46] [47
 
 
-] [45]) [46] [47]
-(./elementos-pos-textuais/apendices/requisitos.tex [48
+] [48]) [49] [50]
+(./elementos-pos-textuais/apendices/requisitos.tex [51
 
 
-] [49] [50] [51])
-(./main.ind) [52]
+] [52] [53] [54])
+(./main.ind) [55]
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
-\tf@toc=\write9
-\openout9 = `main.toc'.
+\tf@lot=\write9
+\openout9 = `main.lot'.
+
+\tf@toc=\write10
+\openout10 = `main.toc'.
 
  (./main.aux)
  ***********
@@ -1658,21 +1668,21 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34051 strings out of 476033
- 578705 string characters out of 5791514
- 1942975 words of memory out of 5000000
- 54917 multiletter control sequences out of 15000+600000
- 625302 words of font info for 376 fonts, out of 8000000 for 9000
+ 34094 strings out of 476033
+ 579037 string characters out of 5791514
+ 1940975 words of memory out of 5000000
+ 54962 multiletter control sequences out of 15000+600000
+ 610408 words of font info for 341 fonts, out of 8000000 for 9000
  87 hyphenation exceptions out of 8191
  104i,12n,120p,2436b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on main.pdf (53 pages, 3826427 bytes).
+Output written on main.pdf (56 pages, 3825311 bytes).
 PDF statistics:
- 710 PDF objects out of 1000 (max. 8388607)
- 610 compressed objects within 7 object streams
- 191 named destinations out of 1000 (max. 500000)
- 71073 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 726 compressed objects within 8 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 49124 words of extra memory for PDF output out of 51595 (max. 10000000)
 

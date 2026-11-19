@@ -5,34 +5,50 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[{ABINPET} e {INSTITUTO PET BRASIL} 2024]{abinpet2024}
+\abntrefinfo{{ABINPET} e {INSTITUTO PET BRASIL}}{{ABINPET}; {INSTITUTO PET
+  BRASIL}}{2024}
+{{ABINPET}; {INSTITUTO PET BRASIL}. \textbf{Dados de mercado 2024}. [\textit{S.
+  l.}]: Abinpet, 2024. Apresentação. Dispon{\'\i}vel em:
+  \url{https://ferrazmaquinas.com.br/uploads/conteudo/conteudo/2025/07/Yv8cV/apresentacao-dados-de-mercado-abinpet.pdf}.
+  Acesso em: 19 nov. 2026.}
+
 \bibitem[Alpi \textit{et al.} 2011]{alpi2011}
 \abntrefinfo{Alpi \textit{et al.}}{ALPI \textit{et al.}}{2011}
 {ALPI, K.~M.; BURNETT, H.~A.; BRYANT, S.~J.; ANDERSON, K.~M. Connecting
   knowledge resources to the veterinary electronic health record: opportunities
   for learning at point of care.
 \textbf{Journal of Veterinary Medical Education}, v.~38, n.~2, p. 110--122,
-  2011.}
+  2011.
+DOI: 10.3138/jvme.38.2.110.
+Dispon{\'\i}vel em: \url{https://pubmed.ncbi.nlm.nih.gov/22023919/}. Acesso em:
+  19 nov. 2026.}
 
 \bibitem[Arbex 2025]{arbex2025}
 \abntrefinfo{Arbex}{ARBEX}{2025}
-{ARBEX, J. \textbf{Brasil ganha 8 mil novos estabelecimentos pet em 2024}.
-  2025. EloVetNet.
-26 maio 2025.
+{ARBEX, J. {Brasil ganha 8 mil novos estabelecimentos pet em 2024}.
+\textbf{EloVetNet}, [\textit{S. l.}], 26 maio 2025.
 Dispon{\'\i}vel em:
   \url{https://elovetnet.com.br/brasil-ganha-8-mil-novos-estabelecimentos-pet-em-2024/}.
   Acesso em: 18 nov. 2026.}
 
 \bibitem[Brasil 2018]{lgpd2018}
 \abntrefinfo{Brasil}{BRASIL}{2018}
-{BRASIL. \textbf{Lei nº 13.709, de 14 de agosto de 2018: Lei Geral de
-  Proteção de Dados Pessoais (LGPD)}. 2018.
+{BRASIL. {Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de
+  Dados Pessoais (LGPD)}.
+\textbf{Diário Oficial da União: seção 1}, Brasília, DF, n.~157, p.~59, 15
+  ago. 2018.
 Dispon{\'\i}vel em:
   \url{https://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2018/lei/l13709.htm}.
   Acesso em: 6 nov. 2026.}
 
 \bibitem[Brasil 2020]{leisansao2020}
 \abntrefinfo{Brasil}{BRASIL}{2020}
-{BRASIL. \textbf{Lei nº 14.064, de 29 de setembro de 2020}. 2020.
+{BRASIL. {Lei nº 14.064, de 29 de setembro de 2020. Altera a Lei nº 9.605, de
+  12 de fevereiro de 1998, para aumentar as penas cominadas ao crime de
+  maus-tratos aos animais quando se tratar de cão ou gato}.
+\textbf{Diário Oficial da União: seção 1}, Brasília, DF, n.~188, p.~4, 30
+  set. 2020.
 Dispon{\'\i}vel em:
   \url{https://www.planalto.gov.br/ccivil\_03/\_ato2019-2022/2020/lei/l14064.htm}.
   Acesso em: 6 nov. 2026.}
@@ -58,11 +74,15 @@ Dispon{\'\i}vel em:
 {GIL, A.~C. \textbf{Como elaborar projetos de pesquisa}. 7. ed. Barueri: Atlas,
   2022.}
 
-\bibitem[Kleppmann 2017]{kleppmann2017}
-\abntrefinfo{Kleppmann}{KLEPPMANN}{2017}
-{KLEPPMANN, M. \textbf{Designing Data-Intensive Applications: The Big Ideas
-  Behind Reliable, Scalable, and Maintainable Systems}. Sebastopol: O'Reilly
-  Media, 2017.}
+\bibitem[Kleppmann \textit{et al.} 2019]{kleppmann2019}
+\abntrefinfo{Kleppmann \textit{et al.}}{KLEPPMANN \textit{et al.}}{2019}
+{KLEPPMANN, M.; WIGGINS, A.; HARDENBERG, P. van; MCGRANAGHAN, M. Local-first
+  software: you own your data, in spite of the cloud. In:  ACM SIGPLAN
+  INTERNATIONAL SYMPOSIUM ON NEW IDEAS, NEW PARADIGMS, AND REFLECTIONS ON
+  PROGRAMMING AND SOFTWARE (ONWARD!), 2019, Atenas. \textbf{Proceedings [...]}.
+  New York: ACM, 2019. p. 154--178. DOI: 10.1145/3359591.3359737.
+  Dispon{\'\i}vel em: \url{https://doi.org/10.17863/cam.44635}. Acesso em: 19
+  nov. 2026.}
 
 \bibitem[Meta Platforms {[2026]}]{reactnative}
 \abntrefinfo{Meta Platforms}{META PLATFORMS}{{[2026]}}
@@ -73,13 +93,42 @@ Dispon{\'\i}vel em: \url{https://reactnative.dev/}. Acesso em: 6 nov. 2026.}
 \abntrefinfo{Nibblett, Ketzis e Grigg}{NIBBLETT; KETZIS; GRIGG}{2015}
 {NIBBLETT, B.~M.; KETZIS, J.~K.; GRIGG, E.~K. Comparison of stress exhibited by
   cats examined in a clinic versus a home setting.
-\textbf{Applied Animal Behaviour Science}, v.~173, p. 68--75, 2015.}
+\textbf{Applied Animal Behaviour Science}, v.~173, p. 68--75, 2015.
+DOI: 10.1016/j.applanim.2014.10.005.
+Dispon{\'\i}vel em:
+  \url{https://www.sciencedirect.com/science/article/pii/S0168159114002755}.
+  Acesso em: 19 nov. 2026.}
+
+\bibitem[Nieles, Dempsey e Pillitteri 2017]{nist2017}
+\abntrefinfo{Nieles, Dempsey e Pillitteri}{NIELES; DEMPSEY; PILLITTERI}{2017}
+{NIELES, M.; DEMPSEY, K.; PILLITTERI, V.~Y. \textbf{An introduction to
+  information security}. Gaithersburg: National Institute of Standards and
+  Technology, 2017.  (NIST Special Publication 800-12, Rev. 1). DOI:
+  10.6028/NIST.SP.800-12r1. Dispon{\'\i}vel em:
+  \url{https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf}.
+  Acesso em: 19 nov. 2026.}
 
 \bibitem[Nozbe {[2026]}]{watermelondb}
 \abntrefinfo{Nozbe}{NOZBE}{{[2026]}}
 {NOZBE. \textbf{WatermelonDB: Synchronization}. {[2026]}.
 Dispon{\'\i}vel em: \url{https://watermelondb.dev/docs/Sync/Intro}. Acesso em:
   6 nov. 2026.}
+
+\bibitem[Oliveira 2026]{oliveira2026}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2026}
+{OLIVEIRA, S. {Número de animais abandonados no Brasil segue alarmante}.
+\textbf{Jornal da USP}, [\textit{S. l.}], 2 mar. 2026.
+Dispon{\'\i}vel em:
+  \url{https://jornal.usp.br/atualidades/abandono-de-animais-segue-alarmante-no-brasil/}.
+  Acesso em: 19 nov. 2026.}
+
+\bibitem[Panorama PET VET 2023]{panoramapetvet2023}
+\abntrefinfo{Panorama PET VET}{PANORAMA PET VET}{2023}
+{PANORAMA PET VET. {População de pets no Brasil já é 3ª maior do mundo}.
+\textbf{Pet Conecta Digital}, [\textit{S. l.}], 28 abr. 2023.
+Dispon{\'\i}vel em:
+  \url{https://www.petconectadigital.com.br/panorama-petvet/populacao-de-pets-no-brasil-ja-e-3a-maior-do-mundo}.
+  Acesso em: 19 nov. 2026.}
 
 \bibitem[Pimazzoni 2023]{pimazzoni2023}
 \abntrefinfo{Pimazzoni}{PIMAZZONI}{2023}
@@ -88,7 +137,7 @@ Dispon{\'\i}vel em: \url{https://watermelondb.dev/docs/Sync/Intro}. Acesso em:
   prontuário eletrônico e recursos de geolocalização}.
 Disserta\c{c}\~{a}o (Mestrado em Gestão e Inovação na Indústria Animal) ---
   Faculdade de Zootecnia e Engenharia de Alimentos, Universidade de São Paulo,
-  Pirassununga, 2023.
+  Pirassununga, 2023. DOI: 10.11606/D.74.2023.tde-16022024-170716.
 Dispon{\'\i}vel em:
   \url{https://teses.usp.br/teses/disponiveis/74/74134/tde-16022024-170716/pt-br.html}.
   Acesso em: 6 nov. 2026.}
@@ -99,13 +148,16 @@ Dispon{\'\i}vel em:
   Postoperative complications of elective surgeries in dogs and cats determined
   by examining electronic and paper medical records.
 \textbf{Journal of the American Veterinary Medical Association}, v.~208, n.~11,
-  p. 1882--1886, 1996.}
+  p. 1882--1886, 1996.
+Dispon{\'\i}vel em: \url{https://pubmed.ncbi.nlm.nih.gov/8675479/}. Acesso em:
+  19 nov. 2026.}
 
-\bibitem[S{\~a}o Paulo 2024]{saopaulo2024}
-\abntrefinfo{S{\~a}o Paulo}{S{\~A}O PAULO}{2024}
-{S{\~A}O PAULO. \textbf{Lei nº 17.972, de 10 de julho de 2024: dispõe sobre a
-  proteção, a saúde e o bem-estar na criação e na comercialização de
-  cães e gatos no Estado de São Paulo}. 2024.
+\bibitem[S{\~a}o Paulo {(Estado)} 2024]{saopaulo2024}
+\abntrefinfo{S{\~a}o Paulo {(Estado)}}{S{\~A}O PAULO {(Estado)}}{2024}
+{S{\~A}O PAULO {(Estado)}. {Lei nº 17.972, de 10 de julho de 2024. Dispõe
+  sobre a proteção, a saúde e o bem-estar na criação e na
+  comercialização de cães e gatos no Estado de São Paulo}.
+\textbf{Diário Oficial do Estado de São Paulo}, São Paulo, 11 jul. 2024.
 Dispon{\'\i}vel em:
   \url{https://www.al.sp.gov.br/repositorio/legislacao/lei/2024/original-lei-17972-10.07.2024.html}.
   Acesso em: 18 nov. 2026.}
@@ -124,11 +176,20 @@ Dispon{\'\i}vel em: \url{https://sqlite.org/docs.html}. Acesso em: 6 nov.
 
 \bibitem[Vidal 2026]{sebrae2026}
 \abntrefinfo{Vidal}{VIDAL}{2026}
-{VIDAL, C. \textbf{Nos últimos dois anos, abertura de pequenos negócios do
-  mercado pet cresceu 22\% no país}. 2026. Agência Sebrae de Notícias.
-6 fev. 2026.
+{VIDAL, C. {Nos últimos dois anos, abertura de pequenos negócios do mercado
+  pet cresceu 22\% no país}.
+\textbf{Agência Sebrae de Notícias}, [\textit{S. l.}], 6 fev. 2026.
 Dispon{\'\i}vel em:
   \url{https://agenciasebrae.com.br/cultura-empreendedora/nos-ultimos-dois-anos-abertura-pequenos-negocios-do-mercado-pet-cresceu-22-no-pais/}.
   Acesso em: 18 nov. 2026.}
+
+\bibitem[{WERZK LUUUUUUU} 2020]{werzk2020}
+\abntrefinfo{{WERZK LUUUUUUU}}{{WERZK LUUUUUUU}}{2020}
+{{WERZK LUUUUUUU}. \textbf{Pessoa segurando gato tabby prateado}. 2020. 1
+  fotografia.
+Publicada no Unsplash em 1 ago. 2020.
+Dispon{\'\i}vel em:
+  \url{https://unsplash.com/pt-br/fotografias/pessoa-segurando-gato-tabby-prateado-tDlo2ZPlQlU}.
+  Acesso em: 19 nov. 2026.}
 
 \end{thebibliography}

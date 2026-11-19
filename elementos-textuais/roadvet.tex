@@ -1,4 +1,5 @@
-\chapter{Roadvet}
+%CORRIGIDO
+\chapter{RoadVet}
 \label{cap:roadvet}
 Este capítulo apresenta a contribuição principal deste trabalho, a aplicação RoadVet.
 
@@ -19,14 +20,12 @@ A arquitetura do sistema foi projetada segundo o modelo Cliente-Servidor, utiliz
 
 
 \section{Visão Geral}
-%EXPLICAR PARA QUEM É A APLICAÇÃO, MOSTRAR O FLUXO DETALHADO
-%FAZER RELAÇÃO DAS TELAS COM OS REQUISITOS CITADOS
-%NÃO DEIXAR IMAGENS UMA ABAIXO DA OUTRA SEM TEXTO
-O \textit{RoadVet} foi concebido para atender médicos veterinários que realizam atendimentos domiciliares e de campo em regiões onde a conectividade à internet é limitada ou inexistente. A aplicação destina-se primordialmente a profissionais autônomos que demandam mobilidade no cuidado à saúde animal, sem prejuízo ao uso por estudantes ou profissionais atuantes em clínicas com acesso estável à rede, visto que o sistema opera de forma transparente em ambas as condições, permitindo o cadastro de tutores, animais e a gestão de prontuários clínicos. No que tange à portabilidade, o artefato foi projetado exclusivamente para plataformas móveis (\textit{mobile}), não sendo prevista sua execução em ambientes de mesa (\textit{desktops} ou \textit{notebooks}).
+%CORRIGIDO
+O \textit{RoadVet} foi concebido para atender médicos veterinários que realizam atendimentos domiciliares de animais de companhia (cães e gatos) em regiões onde a conectividade à internet é limitada ou inexistente. A aplicação destina-se primordialmente a profissionais autônomos que demandam mobilidade no cuidado à saúde animal, sem prejuízo ao uso por estudantes ou profissionais atuantes em clínicas com acesso estável à rede, visto que o sistema opera de forma transparente em ambas as condições, permitindo o cadastro de tutores, animais e a gestão de prontuários clínicos. No que tange à portabilidade, o artefato foi projetado exclusivamente para plataformas móveis, não sendo prevista sua execução em ambientes de mesa, \textit{desktops} ou \textit{notebooks}.
 
 \subsection{Fluxo Principal do Sistema}
 %CORRIGIDO
-Em relação ao fluxo do sistema e ao primeiro contato do usuário com o RoadVet, o usuário é apresentado à tela de boas-vindas que consiste em dois botões: o primeiro destinado a cadastrar o novo usuário, redirecionando para uma tela de formulário de cadastro, o segundo para os usuários já cadastrados na plataforma, que redireciona para a tela de login. Esta tela é apresentada na Figura~\ref{fig:boasvindas}:
+Em relação ao fluxo do sistema e ao primeiro contato do usuário com o RoadVet, o usuário é apresentado à tela de boas-vindas que consiste em dois botões: o primeiro destinado a cadastrar o novo usuário, redirecionando para uma tela de formulário de cadastro, o segundo para os usuários já cadastrados na plataforma, que redireciona para a tela de \textit{login}. Esta tela é apresentada na Figura~\ref{fig:boasvindas}:
 
 \begin{figure}[H] 
     \centering 
@@ -42,7 +41,7 @@ Em relação ao fluxo do sistema e ao primeiro contato do usuário com o RoadVet
 \end{figure}
 
 %CORRIGIDO
-Prosseguindo com o fluxo de navegação, o usuário recém-chegado deve selecionar o botão ``Criar conta''. Em seguida, ele é redirecionado para a interface na qual são solicitados os seguintes dados cadastrais: nome completo, registro no Conselho Regional de Medicina Veterinária (CRMV), e-mail, telefone com DDD e senha de acesso. Após o preenchimento e confirmação, os dados do usuário são salvos no banco de dados do servidor. Para concluir o cadastro, é necessário aceitar os Termos de Uso e a Política de Privacidade, em conformidade com a LGPD, e estar conectado à internet, uma vez que a conta é criada no servidor. A representação dessa tela é ilustrada na Figura~\ref{fig:cadastro}.
+Prosseguindo com o fluxo de navegação, o usuário recém-chegado deve selecionar o botão ``Criar conta''. Em seguida, ele é redirecionado para a interface na qual são solicitados os seguintes dados cadastrais: nome completo, e-mail, senha e confirmação de senha, além do registro no Conselho Regional de Medicina Veterinária (CRMV) e do telefone com DDD, que são opcionais. Após o preenchimento e confirmação, os dados do usuário são salvos no banco de dados do servidor. Para concluir o cadastro, é necessário aceitar os Termos de Uso e a Política de Privacidade, em conformidade com a LGPD, e estar conectado à internet, uma vez que a conta é criada no servidor. A representação dessa tela é ilustrada na Figura~\ref{fig:cadastro}.
 
 \begin{figure}[H] 
     \centering 
@@ -55,7 +54,7 @@ Prosseguindo com o fluxo de navegação, o usuário recém-chegado deve selecion
 \end{figure}
 
 %CORRIGIDO
-No caso de já existir um cadastro para o usuário, basta clicar no botão ``Login'', na tela de boas-vindas, demonstrado na figura ~\ref{fig:boasvindas} e informar o email e senha para seguir os próximos passos, a tela de login está representada na figura ~\ref{fig:login}:
+No caso de já existir um cadastro para o usuário, basta clicar no botão ``Login'', na tela de boas-vindas, demonstrado na figura ~\ref{fig:boasvindas} e informar o e-mail e senha para seguir os próximos passos, a tela de \textit{login} está representada na figura ~\ref{fig:login}:
 
 \begin{figure}[H] 
     \centering 
@@ -70,7 +69,7 @@ No caso de já existir um cadastro para o usuário, basta clicar no botão ``Log
 Após a criação da conta, o veterinário é automaticamente direcionado para a tela principal do sistema, onde o usuário é recebido com uma mensagem de boas-vindas no canto superior, além dos ícones que indicam o status da conexão e a opção de saída da conta (\textit{logout}). Na sequência, encontram-se os atalhos para a criação de nova consulta, novo tutor e novo paciente, seguidos pelos acessos às listas de pacientes, tutores e histórico de atendimentos. Logo abaixo, situa-se o painel de acompanhamento das últimas consultas efetuadas, além do indicador de sincronização com a rede.
 
 %CORRIGIDO
-Na barra inferior de navegação, o primeiro ícone conduz à tela atual; o segundo gerencia as ações relativas aos pacientes (criação, listagem e atualização); o terceiro trata das funcionalidades associadas aos tutores; e o último direciona à tela de prontuários. Ao acessar essa interface, é possível pesquisar os prontuários por nome, data e descrição, bem como ordená-los por data da consulta, tutor ou paciente em ordem alfabética, contando ainda com filtros por espécie (canina ou felina), por presença de prescrição e por presença de pedido de exame. As demais funcionalidades de gestão de prontuários estão disponíveis nessa tela, incluindo a criação de novos registros, a visualização da listagem com nome, data e espécie do paciente, além do indicador de estado da conexão e da sincronização com o servidor, exibido no cabeçalho. A representação dessa interface é ilustrada na Figura~\ref{fig:painel}.
+Na barra inferior de navegação, o primeiro ícone conduz à tela atual, o segundo gerencia as ações relativas aos pacientes, criação, listagem e atualização, o terceiro trata das funcionalidades associadas aos tutores e o último direciona à tela de prontuários. Ao acessar essa interface, é possível pesquisar os prontuários por nome, data e descrição, bem como ordená-los por data da consulta, tutor ou paciente em ordem alfabética, contando ainda com filtros por espécie (canina ou felina), por presença de prescrição e por presença de pedido de exame. As demais funcionalidades de gestão de prontuários estão disponíveis nessa tela, incluindo a criação de novos registros, a visualização da listagem com nome, data e espécie do paciente, além do indicador de estado da conexão e da sincronização com o servidor, exibido no cabeçalho. A representação dessa interface é ilustrada na Figura~\ref{fig:painel}.
 
 \begin{figure}[H] 
     \centering 
@@ -82,7 +81,8 @@ Na barra inferior de navegação, o primeiro ícone conduz à tela atual; o segu
     \noindent{\small} 
 \end{figure}
 
-O passo seguinte consiste em acionar o quarto ícone da barra de navegação inferior, denominado ``Prontuários''. Ao selecionar essa opção, o usuário é direcionado para a interface de gestão dos prontuários clínicos do aplicativo. Nessa tela, disponibiliza-se inicialmente a listagem dos registros já criados, contendo o nome dos pacientes e suas respectivas datas de criação, conforme ilustrado na Figura~\ref{fig:prontuarios}.
+%CORRIGIDO
+O passo seguinte consiste em acionar o quarto ícone da barra de navegação inferior, denominado ``Prontuários''. Ao selecionar essa opção, o usuário é direcionado para a interface de gestão dos prontuários clínicos do aplicativo. Nessa tela, disponibiliza-se inicialmente a listagem dos registros já criados, contendo o nome dos pacientes e suas respectivas datas de atendimento, conforme ilustrado na Figura~\ref{fig:prontuarios}.
 
 \begin{figure}[H] 
     \centering 
@@ -97,7 +97,6 @@ O passo seguinte consiste em acionar o quarto ícone da barra de navegação inf
 %CORRIGIDO
 Dando continuidade ao fluxo apresentado, a ação seguinte consiste em selecionar o botão com o ícone ``+'', localizado no canto inferior direito da interface. Em seguida, o veterinário é direcionado à tela de seleção de pacientes para a criação do prontuário clínico, na qual são listados os animais previamente cadastrados, acompanhados dos nomes de seus respectivos tutores. A interface dispõe de uma barra de busca no canto superior para filtragem por nome, raça ou tutor, além do botão ``Novo pet'', responsável pelo cadastro de um novo animal caso este ainda não conste no sistema. Essa etapa está ilustrada na Figura~\ref{fig:criacaoprontuariolista}.
 
-%\clearpage
 
 \begin{figure}[H] 
     \centering 
@@ -111,7 +110,6 @@ Dando continuidade ao fluxo apresentado, a ação seguinte consiste em seleciona
 
 Após a definição do paciente, o passo subsequente consiste no preenchimento do formulário de atendimento. Nesse documento, devem ser fornecidos sequencialmente os seguintes dados: peso do animal (em quilogramas), temperatura corporal (em graus Celsius), frequência cardíaca, texto referente à anamnese, relato do exame físico e prescrição clínica pós-exame. Os dados complementares serão apresentados nas etapas seguintes, estando a primeira parte do formulário representada na Figura~\ref{fig:formularioprontuario1}.
 
-%\clearpage
 
 \begin{figure}[H] 
     \centering 
@@ -126,7 +124,6 @@ Após a definição do paciente, o passo subsequente consiste no preenchimento d
 
 Ainda no preenchimento do formulário, é preciso também inserir os dados de texto referentes a vacinas, solicitação de exames com anexo de PDF ou imagem e um texto contendo os resultados finais desse atendimento, também com anexo de PDF ou imagem e por fim salvar esse prontuário ou cancelar caso seja percebido algum erro. A tela está representada na figura ~\ref{fig:formularioprontuario2}:
 
-%\clearpage
 
 \begin{figure}[H] 
     \centering 
@@ -140,9 +137,8 @@ Ainda no preenchimento do formulário, é preciso também inserir os dados de te
 \end{figure}
 
 %CORRIGIDO
-Caso o pet ainda não esteja cadastrado no sistema, será necessário selecionar a opção ``Novo pet'', logo abaixo da barra de pesquisa, conforme apresentado na Figura~\ref{fig:criacaoprontuariolista}. Em seguida, são preenchidas as informações do novo animal (gato ou cachorro): imagem, tutor responsável, nome, data de nascimento, peso em quilogramas, espécie e raça, sendo obrigatórios apenas o tutor, o nome e a espécie. Depois, basta selecionar ``Salvar'' para cadastrar o animal ou ``Cancelar'' caso haja algum erro, conforme a Figura~\ref{fig:criacaopet}.
+Caso o \textit{pet} ainda não esteja cadastrado no sistema, será necessário selecionar a opção ``Novo pet'', logo abaixo da barra de pesquisa, conforme apresentado na Figura~\ref{fig:criacaoprontuariolista}. Em seguida, são preenchidas as informações do novo animal (gato ou cachorro): imagem, tutor responsável, nome, data de nascimento, peso em quilogramas, espécie e raça, sendo obrigatórios apenas o tutor, o nome e a espécie. Depois, basta selecionar ``Salvar'' para cadastrar o animal ou ``Cancelar'' caso haja algum erro, conforme a Figura~\ref{fig:criacaopet}.
 
-%\clearpage
 
 \begin{figure}[H] 
     \centering 
@@ -171,17 +167,18 @@ Caso o tutor associado ao paciente não conste no sistema, o usuário pode selec
 \end{figure}
 
 %CORRIGIDO
-Se o passo a passo for seguido corretamente como descrito acima, no final o usuário terá um prontuário profissional em seu aplicativo, totalmente funcional e aberto para edições e exclusão, em modo online e offline.
+Se o passo a passo for seguido corretamente como descrito acima, no final o usuário terá um prontuário profissional em seu aplicativo, totalmente funcional e aberto para edições e exclusão, em modo \textit{online} e \textit{offline}.
 
 \section{Desenvolvimento do Aplicativo}
 O desenvolvimento da aplicação foi executado fundamentando-se nos princípios da Engenharia de Software, visando à construção de uma solução técnica plenamente funcional, modular e escalável. O sistema foi estruturado de forma desacoplada, dividindo-se entre a camada do cliente (\textit{front-end} móvel) e a camada de suporte (\textit{back-end}), permitindo a distribuição isolada das responsabilidades e a aplicação rigorosa das regras de negócio.
 
 Como Ambiente de Desenvolvimento Integrado (\textit{Integrated Development Environment}, IDE) para ambas as vertentes do ecossistema, utilizou-se o \textit{Visual Studio Code} (\textit{VS Code}). O gerenciamento de configuração e o versionamento do código-fonte foram realizados por meio da ferramenta \textit{Git}, com o mapeamento sistemático dos incrementos em um repositório remoto hospedado na plataforma \textit{GitHub}. Essa abordagem garantiu a redundância do código-fonte entre a estação local de trabalho e o servidor remoto, servindo como um mecanismo de contingência para a recuperação de dados.
 
-No escopo da camada do cliente, a biblioteca \textit{React Native} foi adotada para o desenvolvimento da interface e da camada de apresentação do usuário. Nessa estrutura, implementou-se a lógica de persistência local utilizando a biblioteca \textit{WatermelonDB} (construída sobre o mecanismo \textit{SQLite}), o que viabilizou a execução de operações fundamentais de criação, consulta, atualização e exclusão (\textit{Create, Read, Update and Delete}, CRUD) de prontuários clínicos diretamente no dispositivo móvel, mitigando os impactos decorrentes da falta de conectividade em campo.
+%CORRIGIDO
+No escopo da camada do cliente, a biblioteca \textit{React Native} \cite{reactnative} foi adotada para o desenvolvimento da interface e da camada de apresentação do usuário. Nessa estrutura, implementou-se a lógica de persistência local utilizando a biblioteca \textit{WatermelonDB} \cite{watermelondb}, construída sobre o mecanismo \textit{SQLite} \cite{sqlite}, o que viabilizou a execução de operações fundamentais de criação, consulta, atualização e exclusão (\textit{Create, Read, Update and Delete}, CRUD) de prontuários clínicos diretamente no dispositivo móvel, mitigando os impactos decorrentes da falta de conectividade em campo.
 
 %CORRIGIDO
-Para a camada de suporte, utilizou-se o \textit{Django REST Framework} (DRF) para a construção de uma API RESTful baseada na linguagem de programação \textit{Python}, enquanto o sistema gerenciador de banco de dados relacional \textit{SQLite} foi definido para a persistência e o armazenamento estruturado das informações. A lógica de negócio desenvolvida na camada de suporte concentrou-se no gerenciamento da sincronização dos dados provenientes do cliente móvel. Desse modo, estabeleceu-se que, independentemente do estado da conexão, os dados são persistidos primeiro no dispositivo e enviados ao banco de dados do servidor somente nos ciclos de sincronização; em caso de intermitência, permanecem salvos localmente até o restabelecimento da conectividade.
+Para a camada de suporte, utilizou-se o \textit{Django REST Framework} (DRF) \cite{drf} para a construção de uma API RESTful baseada na linguagem de programação \textit{Python}, enquanto o sistema gerenciador de banco de dados relacional \textit{SQLite} foi definido para a persistência e o armazenamento estruturado das informações. A lógica de negócio desenvolvida na camada de suporte concentrou-se no gerenciamento da sincronização dos dados provenientes do cliente móvel. Desse modo, estabeleceu-se que, independentemente do estado da conexão, os dados são persistidos primeiro no dispositivo e enviados ao banco de dados do servidor somente nos ciclos de sincronização, em caso de intermitência, permanecem salvos localmente até o restabelecimento da conectividade.
 
 \section{Estratégia de Persistência e Sincronização}
 As estratégias utilizadas para persistir e sincronizar os dados em ambas as camadas projetadas no sistema foram estruturadas seguindo o conceito de arquitetura \textit{offline-first}. Essa abordagem garante que a aplicação móvel permaneça plenamente operacional para o médico veterinário mesmo em locais sem cobertura de rede, postergando a comunicação com o servidor para o momento em que a conectividade for restabelecida.
@@ -215,7 +212,8 @@ Na camada de suporte (\textit{back-end}), o \textit{Django REST Framework} (DRF)
 %CORRIGIDO
 Para a resolução de potenciais conflitos de concorrência, cenário comum em sistemas operados de forma desconectada, adotou-se a estratégia de que a última escrita prevalece (\textit{Last-Write-Wins}, LWW): no servidor, prevalece a versão do registro recebida por último, enquanto no dispositivo, durante a etapa de \textit{pull}, os campos alterados localmente e ainda não enviados são preservados sobre os valores vindos do servidor. Por fim, mediante a confirmação bem-sucedida do servidor, o \textit{WatermelonDB} marca os registros enviados como sincronizados, consolidando o ciclo de sincronização.
 
-\section{Tecnologias para Desenvolvimento Mobile e Armazenamento Local}
+%CORRIGIDO
+\section{Tecnologias para Desenvolvimento Móvel e Armazenamento Local}
 \label{sec:roadvet-tecnologias}
 %CORRIGIDO
-Buscando o resultado de uma aplicação intuitiva e funcional, foram escolhidas as tecnologias React Native para a camada do cliente e o WatermelonDB para fazer a persistência dos dados nessa camada, de forma que os dados já sejam carregados no dispositivo do usuário de forma \textit{offline}. Para a persistência dos dados na camada do servidor foi utilizado o \textit{SQLite}, Sistema Gerenciador de Banco de Dados muito eficiente e leve. Já para a criação da Interface de Programação de Aplicações (API) foi utilizado o \textit{Django REST Framework}, que permite que os dados sejam enviados em formato JSON para a camada que se comunica com o usuário. Além dessas tecnologias de alto nível de desenvolvimento, o sistema em questão fez uso do \textit{Hypertext Transfer Protocol} (HTTP)\footnote{\url{https://ics.uci.edu/~fielding/pubs/dissertation/top.htm}} para o envio de textos entre a camada de suporte e a camada de cliente, como também a arquitetura REST para a definição da API e de suas respectivas rotas.
+Buscando o resultado de uma aplicação intuitiva e funcional, foram escolhidas as tecnologias React Native para a camada do cliente e o WatermelonDB para fazer a persistência dos dados nessa camada, de forma que os dados já sejam carregados no dispositivo do usuário de forma \textit{offline}. Para a persistência dos dados na camada do servidor foi utilizado o \textit{SQLite}, Sistema Gerenciador de Banco de Dados muito eficiente e leve. Já para a criação da Interface de Programação de Aplicações (API) foi utilizado o \textit{Django REST Framework}, que permite que os dados sejam enviados em formato JSON para a camada que se comunica com o usuário. Além dessas tecnologias de alto nível de desenvolvimento, o sistema em questão fez uso do \textit{Hypertext Transfer Protocol} (HTTP) para o envio de textos entre a camada de suporte e a camada de cliente, como também a arquitetura REST \cite{fielding2000} para a definição da API e de suas respectivas rotas.

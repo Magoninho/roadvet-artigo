@@ -1,18 +1,18 @@
 \chapter{Conclusões e Trabalhos Futuros}
 \label{cap:conclusao}
 %CORRIGIDO
-O presente trabalho de conclusão de curso buscou estudar as ferramentas existentes que atuam de forma offline, como também o mundo do trabalho dos veterinários domiciliares, com o objetivo de criar a aplicação RoadVet. Utilizando-se do paradigma \textit{offline-first}, foi possível se desvencilhar dos problemas de conexão que impediam atividades de registro, consulta e gerenciamento de prontuários clínicos, tutores e pacientes.
+O presente trabalho de conclusão de curso buscou estudar as ferramentas existentes que atuam de forma \textit{offline}, como também o mundo do trabalho dos veterinários domiciliares, com o objetivo de criar a aplicação RoadVet. Utilizando-se do paradigma \textit{offline-first}, foi possível superar os problemas de conexão que impediam atividades de registro, consulta e gerenciamento de prontuários clínicos, tutores e pacientes.
 
 %CORRIGIDO
-Com a implementação da camada de cliente em React Native, a persistência local com o \textit{WatermelonDB}, a interface de programação de aplicações desenvolvida em \textit{Python}, juntamente com o \textit{Django REST Framework} (DRF) e o banco de dados relacional \textit{SQLite}, o sistema demonstrou ser viável e eficaz. Os testes de viabilidade comprovam que a aplicação desenvolvida é capaz de performar em situações em que o dispositivo não possui conexão de rede, como também é capaz de sincronizar os dados de forma assíncrona assim que a conexão é restabelecida. Dessa forma o trabalho contribui para a melhoria da qualidade e segurança dos serviços veterinários volantes, reduzindo a perda de dados clínicos relevantes, como também fornecendo um suporte robusto para a atuação diária desses profissionais.
+Com a implementação da camada de cliente em \textit{React Native}, a persistência local com o \textit{WatermelonDB}, a interface de programação de aplicações desenvolvida em \textit{Python}, juntamente com o \textit{Django REST Framework} (DRF) e o banco de dados relacional \textit{SQLite}, o sistema demonstrou ser viável e eficaz. Os testes realizados, apresentados no Capítulo~\ref{cap:resultados}, indicam que a aplicação desenvolvida é capaz de funcionar em situações em que o dispositivo não possui conexão de rede, como também é capaz de sincronizar os dados de forma assíncrona assim que a conexão é restabelecida. Dessa forma, o trabalho contribui para a melhoria da qualidade e segurança dos serviços veterinários volantes, reduzindo a perda de dados clínicos relevantes, como também fornecendo um suporte robusto para a atuação diária desses profissionais.
 
 \section{Dificuldades Encontradas}
 %CORRIGIDO
 Durante o desenvolvimento do aplicativo, foram enfrentados desafios tanto na esfera técnica quanto no processo de elicitação de requisitos e regras de negócio. No que tange às dificuldades tecnológicas, vale
-destacar a decisão de não se utilizar de APIs externas para facilitar os processos presentes no aplicativo, como cadastro e filtro das entidades. Não foi possível encontrar uma forma eficiente de consumir esses dados disponibilizados por essas aplicações em situações de falta de conectividade, já que o consumo desses serviços acontece por intermédio da internet. Os dados fornecidos eram, por exemplo, nomes de raças de felinos e caninos e vacinas mais utilizadas no meio clínico, tais dados facilitariam muito o cadastro de prontuários e pets no aplicativo, entretanto a decisão final tomada foi o cadastro manual da lista de raças na camada do cliente, mantendo as vacinas como campo de texto livre.
+destacar a decisão de não se utilizar de APIs externas para facilitar os processos presentes no aplicativo, como cadastro e filtro das entidades. Não foi possível encontrar uma forma eficiente de consumir esses dados disponibilizados por essas aplicações em situações de falta de conectividade, já que o consumo desses serviços acontece por intermédio da internet. Os dados que seriam obtidos eram, por exemplo, nomes de raças de felinos e caninos e vacinas mais utilizadas no meio clínico. Tais dados facilitariam muito o cadastro de prontuários e \textit{pets} no aplicativo, entretanto a decisão final tomada foi o cadastro manual da lista de raças na camada do cliente, mantendo as vacinas como campo de texto livre.
 
 %CORRIGIDO
-No que se refere à esfera da elicitação de requisitos, a dificuldade encontrada se deteve no obstáculo de conseguir listar juntamente aos profissionais da veterinária volante, quais seriam as maiores necessidades deles que deveriam ser implementadas no aplicativo, pois muitos dos problemas levantados representavam potenciais funcionalidades do aplicativo, o que exigiria dos desenvolvedores adaptar cada uma delas ao funcionamento sem conexão. Apesar de ter sido uma dificuldade enfrentada, foi possível filtrar o que mais seria necessário para a atuação do profissional em questão no dia a dia e implementar no RoadVet.
+No que se refere à esfera da elicitação de requisitos, a dificuldade encontrada se deteve no obstáculo de conseguir listar juntamente aos profissionais da veterinária volante quais seriam as maiores necessidades deles que deveriam ser implementadas no aplicativo, pois muitos dos problemas levantados representavam potenciais funcionalidades do aplicativo, o que exigiria dos desenvolvedores adaptar cada uma delas ao funcionamento sem conexão. Apesar de ter sido uma dificuldade enfrentada, foi possível filtrar o que mais seria necessário para a atuação do profissional em questão no dia a dia e implementar no RoadVet.
 
 \section{Trabalhos Futuros}
 %CORRIGIDO
@@ -25,18 +25,22 @@ Apesar de a aplicação desenvolvida cumprir de forma positiva os objetivos prop
     \item \textbf{Testes de campo com usuários reais:} Realizar avaliações de usabilidade da aplicação em produção com veterinários volantes em atividade, com o objetivo de mensurar possíveis problemas não mapeados na primeira versão, além de captar a satisfação dessas pessoas com o uso do aplicativo.
 
     %CORRIGIDO
-    \item \textbf{Suporte a múltiplas plataformas:} Expandir o escopo da aplicação móvel atual para suportar versões para web e aplicativo Desktop, de forma responsiva, possibilitando assim que clínicas veterinárias ou profissionais fixos utilizem das ferramentas do RoadVet e de sua base de dados.  
-
-    \item \textbf{Módulo de Controle Financeiro: } Criar módulo de emissão de recibos, controle de honorários e orçamentos de procedimentos diretamente no fluxo do atendimento domiciliar, integrando a ferramenta a meios de pagamento eletrônicos que também operem de forma provisória sem internet.
+    \item \textbf{Suporte a múltiplas plataformas:} Expandir o escopo da aplicação móvel atual para suportar versões para \textit{web} e aplicativo \textit{desktop}, de forma responsiva, possibilitando assim que clínicas veterinárias ou profissionais fixos utilizem das ferramentas do RoadVet e de sua base de dados.  
 
     %CORRIGIDO
-    \item \textbf{Auditoria e Informações de Alteração:} Desenvolver um histórico detalhado de alterações por registro para fins de conformidade médica e regulatória, permitindo rastrear exatamente qual usuário e em qual dispositivo modificou ou excluiu um prontuário clínico específico, além de saber se essas ações foram tomadas de forma online ou offline.
+    \item \textbf{Módulo de Controle Financeiro:}  Criar módulo de emissão de recibos, controle de honorários e orçamentos de procedimentos diretamente no fluxo do atendimento domiciliar, integrando a ferramenta a meios de pagamento eletrônicos que também operem de forma provisória sem internet.
 
     %CORRIGIDO
-    \item \textbf{Módulo de Relatórios e Exportação de Dados: } Desenvolver módulo para que o veterinário possa exportar o histórico completo de prontuários clínicos de cada paciente ou de todos os pacientes, laudos e vacinas em formatos padronizados (como PDF com assinatura digital) ou planilhas em casos de estudos científicos dos dados da aplicação, para envio direto aos tutores por meio de aplicativos de mensagem.
+    \item \textbf{Auditoria e Informações de Alteração:} Desenvolver um histórico detalhado de alterações por registro para fins de conformidade médica e regulatória, permitindo rastrear exatamente qual usuário e em qual dispositivo modificou ou excluiu um prontuário clínico específico, além de saber se essas ações foram tomadas de forma \textit{online} ou \textit{offline}.
+
+    %CORRIGIDO
+    \item \textbf{Módulo de Relatórios e Exportação de Dados:}  Desenvolver módulo para que o veterinário possa exportar o histórico completo de prontuários clínicos de cada paciente ou de todos os pacientes, laudos e vacinas em formatos padronizados (como PDF com assinatura digital) ou planilhas em casos de estudos científicos dos dados da aplicação, para envio direto aos tutores por meio de aplicativos de mensagem.
 
      %CORRIGIDO
-     \item \textbf{Integração com APIs externas: } Pesquisar e implementar serviços externos para a verificação da autenticidade de dados como o CRMV e o CPF junto às bases oficiais, complementando a validação de formato de CPF, e-mail e telefone já realizada localmente, de modo que os dados possam ser conferidos posteriormente quando a conexão estiver disponível.
+     \item \textbf{Integração com APIs Externas:}  Pesquisar e implementar serviços externos para a verificação da autenticidade de dados como o CRMV e o CPF junto às bases oficiais, complementando a validação de formato de CPF, e-mail e telefone já realizada localmente, de modo que os dados possam ser conferidos posteriormente quando a conexão estiver disponível.
      
+     %CORRIGIDO
+     \item \textbf{Atendimento a Animais de Grande Porte:} Ampliar o modelo de dados para contemplar equinos, bovinos e outras espécies de produção, incluindo identificação individual e por rebanho, controle de vacinações obrigatórias e documentos sanitários, cenário no qual a abordagem \textit{offline-first} é especialmente relevante, dada a baixa conectividade de propriedades rurais.
+
 \end{itemize}
 
